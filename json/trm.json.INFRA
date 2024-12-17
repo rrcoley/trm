@@ -1,0 +1,151 @@
+{
+    "Lvl": 0,
+    "Name": "Root",
+    "Subsections": [ 
+	{
+        "Lvl": 1,
+        "Name": "Communications Infrastructure",
+        "Subsections": [ 
+	    {
+            "Lvl": 2,
+            "Name": "Contact Center"
+            },
+	    {
+            "Lvl": 2,
+            "Name": "Data Networking"
+            },
+	    {
+            "Lvl": 2,
+            "Name": "Monitoring"
+	    } ]
+	},
+	{
+        "Lvl": 1,
+        "Name": "Data Centre Services",
+        "Subsections": [ 
+	    {
+            "Lvl": 2,
+            "Name": "Data Centre Infrastructure"
+            },
+	    {
+            "Lvl": 2,
+            "Name": "Hardware Asset Management - DataCentre"
+	    } ]
+	},
+	{
+        "Lvl": 1,
+        "Name": "End User Technology",
+        "Subsections": [ 
+	    {
+            "Lvl": 2,
+            "Name": "AI Workspace"
+            },
+	    {
+            "Lvl": 2,
+            "Name": "Collaboration"
+            },
+	    {
+            "Lvl": 2,
+            "Name": "Real Time Communications"
+            },
+	    {
+            "Lvl": 2,
+            "Name": "Self Service"
+            },
+	    {
+            "Lvl": 2,
+            "Name": "Support"
+            },
+	    {
+            "Lvl": 2,
+            "Name": "Workspace"
+	    } ]
+	},
+	{
+        "Lvl": 1,
+        "Name": "IT Service Management",
+        "Subsections": [ 
+	    {
+            "Lvl": 2,
+            "Name": "Capacity & Performance Management"
+            },
+	    {
+            "Lvl": 2,
+            "Name": "ESM"
+	    } ]
+	},
+	{
+        "Lvl": 1,
+        "Name": "Server Platform Infrastructure",
+        "Subsections": [ 
+	    {
+            "Lvl": 2,
+            "Name": "Batch Management"
+		},
+	    {
+            "Lvl": 2,
+            "Name": "Database Technologies"
+		},
+	    {
+            "Lvl": 2,
+            "Name": "Operating Systems",
+            "Subsections": [ 
+	        {
+				"Lvl": 3,
+            	"Name": "Unix"
+			},	
+	        {
+				"Lvl": 3,
+            	"Name": "Windows"
+			},	
+	        {
+				"Lvl": 3,
+            	"Name": "zOS"
+			},	
+	        {
+				"Lvl": 3,
+            	"Name": "iOS"
+	        } ]
+		} ]
+	},
+	{
+        "Lvl": 1,
+        "Name": "Distributed Systems",
+        "Subsections": [ 
+	    {
+            "Lvl": 2,
+            "Name": "Platform Security Products"
+		},
+		{
+            "Lvl": 2,
+            "Name": "Server Management Products"
+		},
+		{
+            "Lvl": 2,
+            "Name": "Virtualisation",
+            "Subsections": [ 
+			{
+				"Lvl": 3,
+				"Name": "Server Virtualisation",
+            	"Subsections": [ 
+				{
+					"Lvl": 4,
+					"Name": "Vmware"
+				} ]
+			},
+			{
+				"Lvl": 3,
+				"Name": "OS Virtualisation",
+            	"Subsections": [ 
+				{
+					"Lvl": 4,
+					"Name": "Containers"
+				},
+				{
+					"Lvl": 4,
+					"Name": "Kubertnetes"
+				} ]
+			} ]
+		} ]
+	} ]
+}

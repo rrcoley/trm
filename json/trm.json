@@ -1,0 +1,4433 @@
+{
+    "Name": "Root",
+    "Lvl": "0",
+    "Subsections": [ {
+        "Name": "Application",
+        "Lvl": "1",
+        "Subsections": [ {
+            "Name": "Cloud Native Application Architecture",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "MicroServices",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Microservices Design",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Microservices Governance",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Microservices Tools",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Microservices Training",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Modern Batch Processing",
+                "Lvl": "3" 
+            }, {
+                "Name": "Serverless",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Serverless Containers (CaaS)",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Serverless Functions (FaaS)",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Service Mesh",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Service Mesh Tools",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Service Mesh Training",
+                    "Lvl": "4" 
+                } ]
+            } ]
+        }, {
+            "Name": "Digital Channels and Platforms",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Mobile",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Mobile - Android",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Mobile - Common",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Mobile - Huawei",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Mobile - Notifications",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Mobile - Samsung",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Mobile - Security",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Mobile - IOS",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "UI & Web App",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Component Library",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Content",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Framework - Client",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Framework - Server",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Thick Client",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "User Experience",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Web Client",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Web 3.0",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "DLT",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "W3 Application",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "W3 Interaction",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "W3 Platform",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "W3 Surveillance",
+                    "Lvl": "4" 
+                } ]
+            } ]
+        }, {
+            "Name": "Integration",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "API (Application Programming Interface)",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "API Design",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "API Development & Runtime Frameworks",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "API Discovery",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "API Catalogue",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "API Inventory",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "API Governance",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "API Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "API Monitoring",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "API Security",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "API Authentication",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "API Authorisation",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "API Testing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "API Training",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Events Integration",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Events Broker Platforms",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Event Discovery",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Event Stream Processing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Event and Event Service Design",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Traditional Integration",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Enterprise Service Bus",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "File Based Integration",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "File Transfer",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Messaging",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Message Broker Platforms",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            } ]
+        }, {
+            "Name": "Low Code/No Code",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Data Preparation (Self Service)",
+                "Lvl": "3" 
+            }, {
+                "Name": "Task Automation/Simple Workflows",
+                "Lvl": "3" 
+            }, {
+                "Name": "User Experience/Interface",
+                "Lvl": "3" 
+            } ]
+        } ]
+    }, {
+        "Name": "Automation",
+        "Lvl": "1",
+        "Subsections": [ {
+            "Name": "Cognitive Automation",
+            "Lvl": "2" 
+        }, {
+            "Name": "Content Services",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Access",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Content Based Search",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Electronic Access",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Enterprise Search",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Capture",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Content Collect",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Content Scan",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Forms Processing",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Compose",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Content Collaboration",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Content Generation",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "E-Signature Capture Solution",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Deliver",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Content Delivery Network",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Electronic Distribution",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Federated Search",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Print Distribution",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Transformation (Deliver)",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Manage",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Content Federation",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Email Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Records Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Team Collaboration (Manage)",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Web Content Management",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Public Web Site",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Recognize",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Automated Classification (ref)",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Digitization (OCR/ICR) (ref)",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Intelligent Data Extraction (ref)",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Store",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Internal Reporting",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Repositories",
+                    "Lvl": "4" 
+                } ]
+            } ]
+        }, {
+            "Name": "Decision Execution",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Business Controlled Authoring (Shared Environment)",
+                "Lvl": "3" 
+            }, {
+                "Name": "IT Controlled Authoring (Embedded)",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "Intelligent Document Automation",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Automated Classification",
+                "Lvl": "3" 
+            }, {
+                "Name": "Digitization (OCR/ICR)",
+                "Lvl": "3" 
+            }, {
+                "Name": "Intelligent Data Extraction (IDE)",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "Intelligent Email Automation",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "eMail Cryptography",
+                "Lvl": "3" 
+            }, {
+                "Name": "eMail Workflow Management",
+                "Lvl": "3" 
+            }, {
+                "Name": "eMail InBound and OutBound Management",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "Process Intelligence",
+            "Lvl": "2" 
+        }, {
+            "Name": "Process Modelling (Automation)",
+            "Lvl": "2" 
+        }, {
+            "Name": "Process Monitoring & Analytics",
+            "Lvl": "2" 
+        }, {
+            "Name": "Process Orchestration and Workflow",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Business Application with Workflow (Automation)",
+                "Lvl": "3" 
+            }, {
+                "Name": "Case Management",
+                "Lvl": "3" 
+            }, {
+                "Name": "Operational Work Management (Automation)",
+                "Lvl": "3" 
+            }, {
+                "Name": "Workflow and Process Orchestration",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "Robotic Process Automation",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Attended Automation",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Runtime Environment (AA)",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Unattended Automation",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Runtime Environemnt (UA)",
+                    "Lvl": "4" 
+                } ]
+            } ]
+        } ]
+    }, {
+        "Name": "Cloud",
+        "Lvl": "1",
+        "Subsections": [ {
+            "Name": "AliCloud",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "AI & Machine Learning",
+                "Lvl": "3" 
+            }, {
+                "Name": "Analytics",
+                "Lvl": "3" 
+            }, {
+                "Name": "Compute",
+                "Lvl": "3" 
+            }, {
+                "Name": "Data Migration",
+                "Lvl": "3" 
+            }, {
+                "Name": "Database",
+                "Lvl": "3" 
+            }, {
+                "Name": "Developer Tools",
+                "Lvl": "3" 
+            }, {
+                "Name": "Management Tools",
+                "Lvl": "3" 
+            }, {
+                "Name": "Networking",
+                "Lvl": "3" 
+            }, {
+                "Name": "Security Identity and Compliance",
+                "Lvl": "3" 
+            }, {
+                "Name": "Storage",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "Amazon Web Services",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Analytics",
+                "Lvl": "3" 
+            }, {
+                "Name": "Application Integration",
+                "Lvl": "3" 
+            }, {
+                "Name": "Business Applications",
+                "Lvl": "3" 
+            }, {
+                "Name": "Cloud Financial Management",
+                "Lvl": "3" 
+            }, {
+                "Name": "Compute",
+                "Lvl": "3" 
+            }, {
+                "Name": "Contact Center",
+                "Lvl": "3" 
+            }, {
+                "Name": "Containers",
+                "Lvl": "3" 
+            }, {
+                "Name": "Cryptography & PKI",
+                "Lvl": "3" 
+            }, {
+                "Name": "Database",
+                "Lvl": "3" 
+            }, {
+                "Name": "Desktop and App Streaming",
+                "Lvl": "3" 
+            }, {
+                "Name": "Developer Tools",
+                "Lvl": "3" 
+            }, {
+                "Name": "End User Computing",
+                "Lvl": "3" 
+            }, {
+                "Name": "Front-End Web & Mobile",
+                "Lvl": "3" 
+            }, {
+                "Name": "Game Development",
+                "Lvl": "3" 
+            }, {
+                "Name": "Internet of Things (IOT)",
+                "Lvl": "3" 
+            }, {
+                "Name": "Machine Learning & AI",
+                "Lvl": "3" 
+            }, {
+                "Name": "Management & Governance",
+                "Lvl": "3" 
+            }, {
+                "Name": "Media Services",
+                "Lvl": "3" 
+            }, {
+                "Name": "Migration & Transfer",
+                "Lvl": "3" 
+            }, {
+                "Name": "Mobile",
+                "Lvl": "3" 
+            }, {
+                "Name": "Networking & Content Delivery",
+                "Lvl": "3" 
+            }, {
+                "Name": "Quantum Computing",
+                "Lvl": "3" 
+            }, {
+                "Name": "Satellite",
+                "Lvl": "3" 
+            }, {
+                "Name": "Security Identity and Compliance",
+                "Lvl": "3" 
+            }, {
+                "Name": "Storage",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "Azure",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "AI & Machine Learning",
+                "Lvl": "3" 
+            }, {
+                "Name": "Analytics",
+                "Lvl": "3" 
+            }, {
+                "Name": "Application Integration & APIs",
+                "Lvl": "3" 
+            }, {
+                "Name": "Big Data and Analytics",
+                "Lvl": "3" 
+            }, {
+                "Name": "Business Productivity",
+                "Lvl": "3" 
+            }, {
+                "Name": "Compute",
+                "Lvl": "3" 
+            }, {
+                "Name": "Customer Engagement",
+                "Lvl": "3" 
+            }, {
+                "Name": "Database",
+                "Lvl": "3" 
+            }, {
+                "Name": "Desktop and App Streaming",
+                "Lvl": "3" 
+            }, {
+                "Name": "Developer Tools",
+                "Lvl": "3" 
+            }, {
+                "Name": "Hybrid and Multicloud",
+                "Lvl": "3" 
+            }, {
+                "Name": "Internet of Things",
+                "Lvl": "3" 
+            }, {
+                "Name": "Management Tools",
+                "Lvl": "3" 
+            }, {
+                "Name": "Media and Mixed Reality",
+                "Lvl": "3" 
+            }, {
+                "Name": "Migration",
+                "Lvl": "3" 
+            }, {
+                "Name": "Mobile",
+                "Lvl": "3" 
+            }, {
+                "Name": "Networking and Content Delivery",
+                "Lvl": "3" 
+            }, {
+                "Name": "Security Identity and Compliance",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "Google Cloud Platform",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "AI & Machine Learning",
+                "Lvl": "3" 
+            }, {
+                "Name": "API Platform and Ecosystems",
+                "Lvl": "3" 
+            }, {
+                "Name": "Big Data and Analytics",
+                "Lvl": "3" 
+            }, {
+                "Name": "Business Application",
+                "Lvl": "3" 
+            }, {
+                "Name": "Compute",
+                "Lvl": "3" 
+            }, {
+                "Name": "Data Migration",
+                "Lvl": "3" 
+            }, {
+                "Name": "Database",
+                "Lvl": "3" 
+            }, {
+                "Name": "Developer Tools",
+                "Lvl": "3" 
+            }, {
+                "Name": "Management Tools",
+                "Lvl": "3" 
+            }, {
+                "Name": "Networking and Content Delivery",
+                "Lvl": "3" 
+            }, {
+                "Name": "Security, Identity and Compliance",
+                "Lvl": "3" 
+            }, {
+                "Name": "Storage",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "MongoDB Atlas",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Database",
+                "Lvl": "3" 
+            } ]
+        } ]
+    }, {
+        "Name": "Data",
+        "Lvl": "1",
+        "Subsections": [ {
+            "Name": "Data Capture",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Batch Ingestion",
+                "Lvl": "3" 
+            }, {
+                "Name": "Change Data Capture",
+                "Lvl": "3" 
+            }, {
+                "Name": "Ingestion Management",
+                "Lvl": "3" 
+            }, {
+                "Name": "Manual Upload",
+                "Lvl": "3" 
+            }, {
+                "Name": "One-time Data Migration",
+                "Lvl": "3" 
+            }, {
+                "Name": "Real-time Data Migration",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "Data Consume",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Analytics",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Advanced Analytics",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Application Analytics",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Natural Language Generation",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Self-service Data Preparation",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Unstructured Data Analytics",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "BI & Visualisation",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Business Intelligence",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "General Visualisation",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Data Science",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "AI Building Blocks",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "AI Platforms",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "AI Solutions",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Model Deployment & Serving",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Model Development & Evaluation",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Model Governance",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Reporting",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "General Reporting",
+                    "Lvl": "4" 
+                } ]
+            } ]
+        }, {
+            "Name": "Data Management",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Data Discovery",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Structured Data Discovery",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Unstructured Data Discovery",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Data Entitlements",
+                "Lvl": "3" 
+            }, {
+                "Name": "Data Governance",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Business Glossary",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Data Classification",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Data Tagging",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Metadata Management",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Data Lineage",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Data Lineage Discovery",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Data Lineage Facts Visualisation",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Data Lineage Inferred Visualisation",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Data Modelling",
+                "Lvl": "3" 
+            }, {
+                "Name": "Data Privacy Management",
+                "Lvl": "3" 
+            }, {
+                "Name": "Data Quality Management",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Data Quality Issue Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Data Quality Monitoring",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Data Quality Rules Definition",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Information Lifecycle Management",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Legal Holds",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Records Archive",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Records Inventory",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Records Retention Schedule",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Retention Archive",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Unstructured Records Classification",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Logging & Monitoring",
+                "Lvl": "3" 
+            }, {
+                "Name": "Master & Reference Data Management",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "Data Process",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Data Processing (ETL / ELT)",
+                "Lvl": "3" 
+            }, {
+                "Name": "ETL Code Converter",
+                "Lvl": "3" 
+            }, {
+                "Name": "File Format Conversion",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "Data Provision",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Data Virtualization",
+                "Lvl": "3" 
+            }, {
+                "Name": "Datastore Virtualization",
+                "Lvl": "3" 
+            }, {
+                "Name": "Query Engine",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "Hadoop Stack",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Cluster Provisioning and Management",
+                "Lvl": "3" 
+            }, {
+                "Name": "Data Access",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Batch Processing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "In-Memory",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "NoSQL",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Columnar Store",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "SQL",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Script",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Search",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Data Integrators",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "SQL based",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Streaming",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Data-Governance",
+                "Lvl": "3" 
+            }, {
+                "Name": "File Management Hadoop",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Clustered File System Hadoop",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Disk File System Hadoop",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "File Management Hadoop - Network File System Hadoop",
+                "Lvl": "3" 
+            }, {
+                "Name": "Hadoop Cluster Operations",
+                "Lvl": "3" 
+            }, {
+                "Name": "Logging",
+                "Lvl": "3" 
+            }, {
+                "Name": "Monitoring",
+                "Lvl": "3" 
+            }, {
+                "Name": "Resource Management (Data OS)",
+                "Lvl": "3" 
+            }, {
+                "Name": "Scheduling",
+                "Lvl": "3" 
+            }, {
+                "Name": "Security (Hadoop Distribution)",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Authorisation",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Encryption",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Data-at-Rest",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Data-in-Motion",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Structured/Unstructured",
+                "Lvl": "3" 
+            } ]
+        } ]
+    }, {
+        "Name": "DevSecOps",
+        "Lvl": "1",
+        "Subsections": [ {
+            "Name": "Create & Build",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Build Automation",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Open Source Software Management",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Code Quality",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Compile Time Analysis",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Cobol",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Java",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Profile and Run-time Analysis",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "C/C++",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "COBOL",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Java",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Coding Assistants",
+                "Lvl": "3" 
+            }, {
+                "Name": "Compilers & Interpreters",
+                "Lvl": "3" 
+            }, {
+                "Name": "Debuggers & Profilers",
+                "Lvl": "3" 
+            }, {
+                "Name": "Editor",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Development Kits",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "C/C++",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "COBOL",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Java",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "RPG/iSeries",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Ruby",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Web/j2EE",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Integrated Development Environment",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": ".NET",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "(X)HTML/CSS/JS",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "ActionScript/Flex",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "C/C++",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "COBOL",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Database",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Domino/Lotus",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Flash",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Java",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Mobile/Hybrid",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "PHP",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Pascal",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Perl",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Power Builder",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "R",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "RPC/iSeries",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "XML",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Source Code Management (C&B)",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "Monitor",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Application Analytics",
+                "Lvl": "3" 
+            }, {
+                "Name": "Health Status Publishing",
+                "Lvl": "3" 
+            }, {
+                "Name": "Notifications",
+                "Lvl": "3" 
+            }, {
+                "Name": "Observability",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Logging",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Metrics",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Tracing",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Software Composition Analysis",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "Package & Release",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Artefact Management",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Open Source Software Management",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "CI/CD",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "COBOL",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Content (Release and Deployment)",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Java",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "PeopleSoft (Release and Deployment)",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "RPG",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Configuration Management (P&R)",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Desktop",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Distributed",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Infrastructure as Code",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Lotus/Domino",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Mainframe/COBOL",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "PeopleSoft (Configuration Management)",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Secrets Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "iSeries/RPG",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Schema Migrations",
+                "Lvl": "3" 
+            }, {
+                "Name": "Software Supply Chain Security",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "DAST",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Fuzz Testing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Image Scanning",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "MAST",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Pen Testing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "SAST",
+                    "Lvl": "4" 
+                } ]
+            } ]
+        }, {
+            "Name": "Planning & Collaboration (DSO)",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Change Management",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Requirements Specification and Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Software Enhancement",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "ChatOps",
+                "Lvl": "3" 
+            }, {
+                "Name": "Code Review Management",
+                "Lvl": "3" 
+            }, {
+                "Name": "Issue Tracking",
+                "Lvl": "3" 
+            }, {
+                "Name": "Knowledge Management",
+                "Lvl": "3" 
+            }, {
+                "Name": "Source Code Collaboration",
+                "Lvl": "3" 
+            }, {
+                "Name": "Sprint Planning",
+                "Lvl": "3" 
+            }, {
+                "Name": "Task Management",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "Verify & Test",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Code Coverage",
+                "Lvl": "3" 
+            }, {
+                "Name": "Functional Testing",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Acceptance Testing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Mobile Testing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Regression Testing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Web Testing",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Non-Functional Testing",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Chaos Testing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Mobile Testing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Performance & Load Testing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Resilience Testing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Web Testing",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Security & Vulnerability Analysis",
+                "Lvl": "3" 
+            }, {
+                "Name": "Synthetic Test Data Generation",
+                "Lvl": "3" 
+            }, {
+                "Name": "Test Management",
+                "Lvl": "3" 
+            }, {
+                "Name": "Unit Testing",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Unit Test Automation",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "COBOL",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Java",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Web/UI",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Unit Test Platforms",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Web/J2EE",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            } ]
+        } ]
+    }, {
+        "Name": "Infrastructure",
+        "Lvl": "1",
+        "Subsections": [ {
+            "Name": "Communications Infrastructure",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Contact Centre",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Automated Call Distribution - ACD",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Call Load Balancing / Agent Distribution",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Computer Telephone Integration - CTI",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Contact Centre MI",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Headset Contact Centre",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "IVR/VRU Platform",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Knowledge Management - KMT",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Outbound Dialing/Predictive Dialler",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Remote Advisor",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Skills Based Routing/Advance Agent Routing - AAR",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Speeach Recognition",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Verint Performance Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Voice Analytics",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Voice Biometrics",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Web Collaboration",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Workforce Management",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Data Networking",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "DDI - DNS, DHCP and IP Address Management",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "DMZ DHCP",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Global Server Load Balancing",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Internal DNS, DHCP, IPAM",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Internet DNS Caching",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Internet DNS Hosting",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Data Centre Networking",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Cabling Technology",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Dense Wave Division Multiplexing - DWDM",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Firewall Platform/Application",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Gateway Proxies",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Local Area Networks - LANS",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Netowrk DoS Protection",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Network Intrusion Detection",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Network Local Load Balancing",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Network Time Protocol",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Remote Access",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Enterprise Networking",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Communications Protocol",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Extranet Firewalls",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "IP Address Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "IP Addressing",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "IP Routers",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Quality of Service",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Remote Access POS",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Routing Protocol",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Wide Area Transport",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Managed Carrier Service - MPLS Circuits",
+                            "Lvl": "6" 
+                        } ]
+                    } ]
+                }, {
+                    "Name": "Network Endpoint Connectivity",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Branch Routers",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "CIFS Acceleration / File Server Centralisation",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Cabling Technology (Branch and Campus Networks)",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Content Delivery/Cache",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Local Area Networks",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "SD WAN",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Wireless Ethernet",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Wireless Services",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Monitoring & Management Systems",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Configuration Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Fault Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Network Automation and Orchestration",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Performance Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Security Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Telecomms Inventory",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Voice Management Systems",
+                    "Lvl": "4" 
+                } ]
+            } ]
+        }, {
+            "Name": "Data Centre Services",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Data Centre Infrastructure",
+                "Lvl": "3" 
+            }, {
+                "Name": "Hardware Asset Management - DataCentre",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "End User Technology",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "AI Workspace",
+                "Lvl": "3" 
+            }, {
+                "Name": "Collaboration",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Business Productivity Suites",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Charts & Diagrams",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Disability Software",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "End User Translation",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Mind Mapping",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Productivity Clients",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Text File Editing",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Document Collaboration - External",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Platform",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Document Collaboration - Personal",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Client",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Document Collaboration - Team",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Administrative Tools",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Development Tools",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Virtual Whiteboards",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Email & Calendering",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Administrative Tools - Email",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Anti Virus - Email",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Archiving - Email",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Client - Email",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Compression - Email",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Gateway Security for External Email",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Migration - Email",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Performance & Capacity Monitoring - Email",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform - Email",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Realtime Monitoring - Email",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Secure Email",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Surveillance - Email",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Intranet",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Blogs",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Content Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Employee Directory",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Enterprise Search",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Intranet UI Components",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Metrics & Analytics",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Staff Photograph Repository",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Search",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Desktop Search",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Enterprise Search",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Internet Search",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Video Information Screens",
+                            "Lvl": "6" 
+                        } ]
+                    } ]
+                } ]
+            }, {
+                "Name": "Real Time Communications",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Digital Signage",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Content Displays",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Content Platform",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Content Player",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Video Wall",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Enterprise Mobility",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Mobile Compliance",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Mobile Device",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Android",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Blackberry",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "iOS",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Mobile Governance System",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Mobile Infrastructure",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Fax Services",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Instant Messaging",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Client",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Logging",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Presence Awareness",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Media Recording",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Agent Coaching Tools",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Automated Quality Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Automated Verification",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Call Recording",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Export Manager",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Meeting Room Recording",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "PCI Pause and Resume",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Quality Monitoring",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Speech Analytics",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Meeting Rooms",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Conference Phones",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Control Systems & Automation",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Digital Whiteboards",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform Interoperability",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Room Booking",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Video Conference Endpoints",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Wireless Presenter",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Trading Floor",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Dealerboard",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Trader Conferencing",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Unified Communications",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Conferencing",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Telephony - Voice",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Headset",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "IP Telephony / Voice over IP - VoIP",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "SIP Gateway",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "TDM Telephony",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Telephony Call Logging",
+                            "Lvl": "6" 
+                        } ]
+                    } ]
+                }, {
+                    "Name": "Video & Audio Conferencing",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Client",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Compliance Recording",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Webcasting",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Video OnDemand & Distribution",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Content Delivery",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Video Portal",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Self Service",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Application Control",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Self Service Devices",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Self Service Manufacturer",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Self Service Management",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Anti Virus & Spyware SSD",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Application Control SSD",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Device & Network Monitoring",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Device Control SSD",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Hard Disk Encryption SSD",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Intrusion Prevention & Host Firewall SSD",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Inventory, Patch Management, Software Distribution and Compliance Settings",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Multi Vendor Software",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Operations Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Remote Control SSD",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Self Service Terminal Handler",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "XFS Software",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Self Service Operating System",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Support",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Managed Print Services - Hardware",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Centralised Printers",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Desktop Printers",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Multi-function devices",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Printer Management",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Managed Print Services - Software",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Document Output Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "MainFrame to PCL",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Printer Selection Client",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Printer and MFD Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Secure Print & Follow Me Print",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Secure Scan",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Workspace",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Application Delivery",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Application Deployment",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Application Deployment - Windows",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Application Deployment - Mac OS",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Application Information Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Application Packaging",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Application Requesting",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Application Tracking",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Citrix Applications Tracking",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Web Applications Tracking",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Content Delivery Optimisation",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Asset, Inventory & MI",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Asset Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Endpoint Inventory Reporting - normalised",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Endpoint Inventory Reporting - raw",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Endpoint Performance Management",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Endpoint Performance Management - Windows",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Reporting & Visualization",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Automation and Customer Interaction",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Self-Help and Management",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Desktop Access Credential Management",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "IT Chatbots",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Self Selve - Desktop Management",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Transformation and Bulk Workflow",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "End User Devices",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Browser",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Endpoint Hardware",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Desktop",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Executive Notebook",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Generic",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Mobile Thin Client",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Monitors",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Notebook",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Static Thin Clients",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Tablet",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Trader Thin Client",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Trader Workstation",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Endpoint Operating System",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Notebook/Desktop",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Tablet",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Thin Client",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Profile Management",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "End User Virtualisation",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Application",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Desktop",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Local Virtual Desktop",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Remote Access",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Security",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "User Experience",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Virtualisation Client",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Virtualisation Infrastructure",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Endpoint Management",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Endpoint Event Management",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Endpoint Event Management - Windows",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Endpoint OS Management",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Endpoint OS Management - Linux",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Endpoint OS Management - Windows",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Endpoint OS Management - macOS",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Endpoint OS Provisioning",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Endpoint OS Provisioning - Linux",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Endpoint OS Provisioning - Windows",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Endpoint OS Provisoning - macOS",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Endpoint Patch Management",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Endpoint Patch Management - Linux",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Endpoint Patch Management - Windows",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Endpoint Patch Management - macOS",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Endpoint Remote Control",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Remote Control - Hardware",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Remote Control - Windows",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Remote Control - macOS",
+                            "Lvl": "6" 
+                        } ]
+                    } ]
+                } ]
+            } ]
+        }, {
+            "Name": "IT Service Management",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Capacity & Performance Management",
+                "Lvl": "3" 
+            }, {
+                "Name": "ESM",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Application Performance Management",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Application Runtime Architecture & Transaction Profiling",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Business Transaction Flow Monitoring",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "End User Experience Monitoring",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Predictive Analytics",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Event Correlation & Analysis",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Event Management CMDB",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Global Event Concentration & Correlation",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Regional Event Concentration & Correlation",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Monitoring",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Application Monitoring",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Database Monitoring",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "DB2 Monitoring",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Database Application Monitoring",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Oracle Monitoring",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "SQLServer Monitoring",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Sybase Monitoring",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Middleware Monitoring",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "MQ Monitoring",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Websphere Monitoring",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Network Monitoring",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform Monitoring",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Cloud (IaaS) Monitoring",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "Amazon Web Services",
+                                "Lvl": "7" 
+                            } ]
+                        }, {
+                            "Name": "Unix Monitoring",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "Unix Application Monitoring",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "Unix Hardware Monitoring",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "Unix Infrastructure Monitoring",
+                                "Lvl": "7" 
+                            } ]
+                        }, {
+                            "Name": "Windows Monitoring",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "Windows Application Monitoring",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "Windows Hardware Monitoring",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "Windows Infrastructure Monitoring",
+                                "Lvl": "7" 
+                            } ]
+                        }, {
+                            "Name": "iSeries Monitoring",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "iSeries Application Monitoring",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "iSeries Hardware Monitoring",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "iSeries Infrastructure Monitoring",
+                                "Lvl": "7" 
+                            } ]
+                        }, {
+                            "Name": "zSeries Monitoring",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "zSeries Application Monitoring",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "zSeries Hardware Monitoring",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "zSeries Infrastructure Monitoring",
+                                "Lvl": "7" 
+                            } ]
+                        }, {
+                            "Name": "Storage Monitoring",
+                            "Lvl": "6" 
+                        } ]
+                    } ]
+                }, {
+                    "Name": "Open Telemetry",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Operational Automation",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Unix Automation",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Windows Automation",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "iSeries Automation",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "zSeries Automation",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Service Assurance",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Application Instrumentation",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Consoles",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Dashboards",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Service Management",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Application Inventory",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Change Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Configuration & Discovery Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "IT Notification",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Incident Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Knowledge Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Problem Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Service Catalogue",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Service Level Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Software Asset Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Technology Reference Model",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            } ]
+        }, {
+            "Name": "Server Platform Infrastructure",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Batch Management",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "UNIX / Linux",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Application Scheduling - Development",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Application Scheduling - Production",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Data Capture for Audit Purposes",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Windows",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Application Scheduling - Development",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Application Scheduling - Production",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "iSeries",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Application Scheduling - Development",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Application Scheduling - Production",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "zSeries",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Application Scheduling - Development",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Application Scheduling - Production",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Data Capture for Audit Purposes",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Operational / Quality Assurance",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Productivity Aid",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Schedule Mapping",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Database Technologies",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Database Engineered Systems",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Database Tools",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Data Replication Management Tools",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Data Replication Design and Deploy",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Data Replication Monitoring",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Data Verification",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Database Virtualization",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Database Workload Capture and Replay",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Inventory",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Multi-Model Database",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "NoSQL Database",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Column Database",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Document Database",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Ggraph Database",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Relational Database Management System - RDBMS",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Data Warehouse Database",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Distributed SQL Database",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Distributed Systems",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Operating Systems",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Unix",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "AIX",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Linux",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Solaris",
+                            "Lvl": "6" 
+                        } ]
+                    } ]
+                }, {
+                    "Name": "Platform Security Products",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Platform Security Unix",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Platform Protection Unix",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "Access Control",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "IPS / IDS Unix",
+                                "Lvl": "7" 
+                            } ]
+                        } ]
+                    } ]
+                }, {
+                    "Name": "Server Hardware",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Enterprise Servers",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "AIX",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Linux",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Solaris",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "HSM",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Gemalto HSM",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Thales HSM",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "IBM Power",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "IBM Power 5",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "IBM Power 6",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "IBM Power 7",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "IBM Power 8",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "IBM Power HMC",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Oracle SPARC Hardware",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Server Components",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Internal Disk Drives",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Memory",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Server IO",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "LAN Server Hardware",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "LAN Server NIC OS Resiliance",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "SAN OS Multipathing",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "SAN Server Hardware",
+                                "Lvl": "7",
+                                "Subsections": [ {
+                                    "Name": "Controllers",
+                                    "Lvl": "8" 
+                                }, {
+                                    "Name": "Disk",
+                                    "Lvl": "8" 
+                                }, {
+                                    "Name": "SFP",
+                                    "Lvl": "8" 
+                                }, {
+                                    "Name": "Storage Controllers",
+                                    "Lvl": "8" 
+                                } ]
+                            } ]
+                        } ]
+                    }, {
+                        "Name": "x86 Server Hardware",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Dell x86 Servers",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "Dell x86 Current Servers",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "Dell x86 Legacy Servers",
+                                "Lvl": "7" 
+                            } ]
+                        }, {
+                            "Name": "HP x86 Servers",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "HP x86 Current Servers",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "HP x86 Legacy Servers",
+                                "Lvl": "7" 
+                            } ]
+                        }, {
+                            "Name": "IBM x86 Servers",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "IBM x86 Current Servers",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "IBM x86 Legacy Servers",
+                                "Lvl": "7" 
+                            } ]
+                        }, {
+                            "Name": "Lenovo x86 Servers",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "Lenovo x86 Current Servers",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "Lenovo x86 Legacy Servers",
+                                "Lvl": "7" 
+                            } ]
+                        }, {
+                            "Name": "Oracle x86 Servers",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "Oracle x86 Current Servers",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "Oracle x86 Legacy Servers",
+                                "Lvl": "7" 
+                            } ]
+                        } ]
+                    } ]
+                }, {
+                    "Name": "Server Management Products",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Administrative Tools",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Account Management",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Console Access",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "HA/Clustering Technology",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Inventory/Configuration Management Support",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Lifecycle Management",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "OS and Middleware Provisioning",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Patch Management",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Remote Access",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Security/Audit Tools",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "System Administration",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Virtualisation",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "File Management",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Clustered File System",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Disk File System",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Network File System",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Volume Management",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Log Correlation & Analytics",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Monitoring Tools",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Anti Virus",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Hardware Monitoring",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Performance Metrics",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Quality & Operational Compliance",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "System of Record",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Virtualisation",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Cloud Provider Virtualisation Technologies",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Operating System",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Vmware",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Server Management Products",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Administrative Tools",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "Inventory / Configuration Management",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "OS and Middleware Provisioning",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "Security / Audit Tools",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "System Administration",
+                                "Lvl": "7" 
+                            } ]
+                        }, {
+                            "Name": "Monitoring Tools",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Server Hardware",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "VMware ESX",
+                            "Lvl": "6" 
+                        } ]
+                    } ]
+                }, {
+                    "Name": "Windows Server",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Server Management Products",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Adminsitration Tools",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "Inventory / Configuration Management",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "OS and Middleware Provisioning",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "Patch Management",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "HA/Clustering",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "Virtualisation",
+                                "Lvl": "7" 
+                            } ]
+                        }, {
+                            "Name": "Data Access Governance",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "File Management",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "Disk File System",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "Network File System",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "Volume Management",
+                                "Lvl": "7" 
+                            } ]
+                        }, {
+                            "Name": "Monitoring Tools",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "Windows",
+                                "Lvl": "7" 
+                            } ]
+                        } ]
+                    }, {
+                        "Name": "Operating System",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Windows Servers",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "HP NonStop",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "HP NonStop Hardware",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "HP NonStop Operating System",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "HP NonStop Server Middleware",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "IBM i (iSeries)",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "IBM i 3rd Party Software",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "IBM i In-House Utilities",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "IBM i OS License Products",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "IBM i Operating System",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "IBM i Servers",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "IBM i Power10",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "IBM i Power7",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "IBM i Power8",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "IBM i Power9",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "IBM i Service Deployment Patterns",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "IBM i Rebuild Patterns",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "IBM i Resilency Patterns",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "IBM i Storage",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "IBM i Disk Storage",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "IBM i SAN Directors",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "IBM i Storage Software",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "IBM i Tape Storage",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Mainframe",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "File Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Mainframe Middleware",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Capacity Management Tools",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Database Management Tools",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Debugging Tools",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Other Middleware",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Performance and Capacity Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Programming Language",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "TP Monitors Interactive Monitoring",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Extension of TP Monitors Interactive Monitoring",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Transaction Processing - TP Monitors",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Mainframe Networking Software",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Mainframe OS",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Mainframe Servers",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Mainframe Storage",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "FICON Director",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Mainframe Disk",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Mainframe Storage Software",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Output Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Security and Access Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Server Management Products",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Administrative Tools",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Monitoring Tools",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "System Management",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Middleware",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Business to Business - B2B Integration Infrastructure",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "B2B Message Transport Infrastructure",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "B2B Real Time Message Gateway",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Container Technologies",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Anthos",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Docker",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "IBM Cloud Paks",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Ingres and Gateway",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Enterprise Application Integration - EAI Infrastructure",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "EAI Mediation Infrastructure",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "EAI Message Transport infrastructure",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "File Transfer",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "External - B2B Product / Protocol",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Internal Product / Protocol",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Between Data Centers not including Sister Data Centers",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Within Data Center including Sister Data Centers",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Synchronous DataStore",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Grid Technologies",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "ComputeGrid",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "DataGrid",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Identity & Access Management",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Customer Authentication Technologies",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Operational Management Products",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Deployment and Administrative Tools",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Dynamic Workload Management",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Web and Application Servers",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Encryption",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Message Transport Encryption",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Monitors",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Interactive Performance Monitors",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "Message Transport Interactive Monitoring",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "Web and Application Server Performance Tools",
+                                "Lvl": "7" 
+                            } ]
+                        } ]
+                    } ]
+                }, {
+                    "Name": "Transaction Processing - TP Monitors",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Web Servers and Application Servers",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Applications Servers",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Lightweight Application Servers",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Presentation Layer Servers",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Transaction Processing Servers",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "WebSocket Gateway",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "HTTP Servers - Reverse Proxy",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "HTTP Servers - Static Content",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Node.js",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Portal Servers",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Python",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Stand-Alone Java Runtime",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Storage & Backup",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Archiving",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Archiving Software",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Backup",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Backup Hardware",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Backup Software",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "CAS",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "CAS Hardware",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "CAS Software",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "NAS",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "NAS Hardware",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "NAS Software",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Object",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Object Hardware",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Object Software",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "SAN",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "SAN Hardware",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "SAN Software",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Software Defined Storage",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Storage Management",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Storage Management Software",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            } ]
+        } ]
+    }, {
+        "Name": "Security",
+        "Lvl": "1",
+        "Subsections": [ {
+            "Name": "Data Protection",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Cryptographic Services",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Data Encryption at Rest",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Database",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "File",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Internal Hard Drive",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Mobile Devices",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Non Removable Storage",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Removable Storage",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Data Encryption during Transit",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Application Transaction",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Email",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "External File Transfer",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "MQ Transaction",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Data Encryption during Use (Memory)",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Hardware Security Module",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Key Management Systems",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Public Key Infrastructure (PKI)",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "SSL Certificate Authority",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "External",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Internal",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "SSL Certificate Management",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "External",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Internal",
+                            "Lvl": "6" 
+                        } ]
+                    } ]
+                }, {
+                    "Name": "Signature Services",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Data Lifecycle Governance",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Data Anonymisation",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Data Classification and Labelling",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Data Concealment",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Data Obscuration",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Data Retention",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Digital Rights Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Secure Disposal of Data",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Secure Distruction - Mobile Devices",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Secure Distruction - Non-Removable Storage",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Secure Distruction - Removable Storage",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Data Loss Prevention",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "DLP Case Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Data Protection during Use (Endpoint)",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "DLP Removable Storage",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Data Protection in Transit",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "DLP - Cloud",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "DLP - Email",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "DLP - Web",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Data Reconnaisance",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Discovery on Demand - Structured Data",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Discovery on Demand - Unstructured Data",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Electronic Discovery",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Intellectual Property Safeguarding",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Digital Rights Administration",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Intellectual Property Management",
+                    "Lvl": "4" 
+                } ]
+            } ]
+        }, {
+            "Name": "IDAM / Privlege Management",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Access Controls",
+                "Lvl": "3" 
+            }, {
+                "Name": "Access Governance",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Recertification",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Segregation of Duties",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Authorisation",
+                    "Lvl": "4" 
+                } ]
+            } ]
+        }, {
+            "Name": "IT Governance, Risk, Compliance",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Compliance Verification",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Databases",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "MQ",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Mainframe",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Unix",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Websphere",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Windows Desktop",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Windows Laptop",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Windows Server",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "IT GRC Framework",
+                "Lvl": "3" 
+            } ]
+        }, {
+            "Name": "Old Model",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Endpoint Protection (Workspace)",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Anti Virus & Spyware",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Anti Virus & Spyware Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Application Control",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Endpoint Data Leakage Protection",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "External Device Control",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "External Device Control Mac",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "External Device Control Windows",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "File Encryption",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Hard Disk Encryption",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Intrusion Prevention & Host Firewall",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Mobile Internet Access",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Privileged Access Control",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Sign On Proxy",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "IAM",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Access Management",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Access Request Automation",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Authentication",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "2 Factor Authentication",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Biometrics",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "By Application",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Non-Windows Appliction",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Windows Application",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "By Platform",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Certificates",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Device Authentication",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Directory Management",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Directory Tools",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "External Authentication Directory",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "External Authorisation Directory",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Federated SSO",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "PKI",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Permission & Policy Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Reduced Signon Proxy",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Token",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Authorization",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Application",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Identification",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Biometric",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Directory Services",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Identity Source",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Identity Synchronisation",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Identity Data Synchronisation",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "User Identification",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Privileged User Management",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Staff",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "External",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Provisioning",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Distributed Database",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform - Platform Provisioning - ACF2",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform - Platform Provisioning - AD",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform - Platform Provisioning - DEC/VAX",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform - Platform Provisioning - Domino",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform - Platform Provisioning - RACF",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform - Platform Provisioning - Unix",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Platform - Platform Provisioning - iSeries",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Security Activity Logging",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Platform",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Sviolation Monitoring",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Network Security",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Access Control",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Network Access Control",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Remote Access",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Wireless Security",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Firewall and Filtering Infrastructure",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Border Routing Control",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Firewall Application/Platform",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Gateway Proxies",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Network Security Management or Monitoring",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Firewall Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Security Compliance",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Security Monitoring",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            } ]
+        }, {
+            "Name": "Secure Infrastructure Services",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "SIS Endpoint Security",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Anti Virus",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Behavioural Anti Malware",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Firewalls",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Laptops",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "SIS Networkt Security",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "SIS API Gateway",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "SIS Application Firewall",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "SIS Reverse Proxy",
+                    "Lvl": "4" 
+                } ]
+            } ]
+        }, {
+            "Name": "Security Awareness Culture",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Security Education Training & Awareness",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "SETA Programme",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Security Awareness Messages",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Security Education/Training",
+                    "Lvl": "4" 
+                } ]
+            } ]
+        }, {
+            "Name": "Security Detection & Response",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Monitor and Detect",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "MD Security Event Analysis",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Security Event Logging",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Threat Deception",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "User Behaviour and Profile Patterns",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Security Response",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Automated Incident Responseand",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Forensic Analysis",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Security Operations Attack/Response Simulation",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Threat Containment",
+                    "Lvl": "4" 
+                } ]
+            } ]
+        }, {
+            "Name": "Threat and Vulnerability Management",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Offensive Security",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "TVM Adversary Simulation",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "TVM Penetration Testing",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Disclosure and Knowledge Sharing",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Penetration Testing Reporting & Workflow",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Threat Identification",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "TVM Security Assurance",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "TVM Threat Intelligence",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "TVM Threat Modelling",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Vulnerability Analysis & Remediation",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "TVM Analysis & Orchestration",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "TVM Reporting & Workflow",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Vulnerability Detection",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "TVM Application",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Dynamic Application Security Testing",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "FOSS Intelligence",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Interactive Application Security Testing",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Mobile Application Security Testing",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Static Application Security Testing",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "TVM Runtime Application Self Protection",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "TVM Attack Surface Monitoring",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "TVM Containers",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Container Image Scanning",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "TVM Infrastructure",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "TVM Posture Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "TVM Software Composition Analysis",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Binary Decomposition & Analysis",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            } ]
+        } ]
+    }, {
+        "Name": "Software",
+        "Lvl": "1",
+        "Subsections": [ {
+            "Name": "App DevSecOps and Infra work In Progress",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Integration Services",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "B2B Integration",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "File Transfer - External",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Messaging",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Message Transport / Protocol",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Messaging Envelopes and Protocols",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Real Time - B2B Gateway",
+                            "Lvl": "6" 
+                        } ]
+                    } ]
+                }, {
+                    "Name": "Enterprise Application Integration",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "File Transfer",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Frameworks",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Mediation",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Batch Mediation - Files",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Real-time Mediation - Messages",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Messaging",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Event Management",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Integration Agents",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Low Latency Messaging",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Message Transport / Protocol",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Message Envelope and Protocols",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Remote Procedure Call",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Transformation",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Parsing",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Real-time Data Transformation - Messages",
+                            "Lvl": "6" 
+                        } ]
+                    } ]
+                }, {
+                    "Name": "Information Integration",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Enterprise Information Integration - EII",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Market Data Distribution",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "Market Data Entitlements",
+                                "Lvl": "7" 
+                            }, {
+                                "Name": "Market Data Infrastructure",
+                                "Lvl": "7" 
+                            } ]
+                        } ]
+                    }, {
+                        "Name": "Extract, Transform & Load - ETL",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Transformation and Data Integration",
+                            "Lvl": "6" 
+                        } ]
+                    } ]
+                } ]
+            } ]
+        }, {
+            "Name": "Business Logic and Process",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Decision Processing",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Credit Bureau Engine",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Credit Bureau Data Aggregation",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Credit Bureau Interface",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Decision Engines",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Credit Assessment",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Acct Opening - Application Processing",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Credit Collections - Retail",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Collections Recovery",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Customer Interfacing Collections",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Credit Management",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Account Management Rules",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Account Management Scorecards",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Credit Line Mgmt / Servicing",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Customer Relationship Management Rules",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Fraud Risk",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Application Fraud",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "ID & Verification",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Social Network Fraud",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Transaction Fraud",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Specialized Decisioning",
+                            "Lvl": "6",
+                            "Subsections": [ {
+                                "Name": "Risk Specialized Decisioning",
+                                "Lvl": "7" 
+                            } ]
+                        } ]
+                    } ]
+                } ]
+            } ]
+        }, {
+            "Name": "Development Services",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "Construction",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Application Framework",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": ".NET",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "COBOL",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Java",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Build Management",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Distributed",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "RPG/iSeries",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "zSeries/COBOL",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Code Quality Management",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Code Coverage",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Java",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Compile Time Analysis",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "COBOL",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "JAVA",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "RPG",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Profiling and Run-time Analysis",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "C/C++",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "COBOL",
+                            "Lvl": "6" 
+                        }, {
+                            "Name": "Java",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Code Review Management",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "Peer Code Review",
+                            "Lvl": "6" 
+                        } ]
+                    }, {
+                        "Name": "Continuous Integration",
+                        "Lvl": "5",
+                        "Subsections": [ {
+                            "Name": "zSeries/COBOL",
+                            "Lvl": "6" 
+                        } ]
+                    } ]
+                }, {
+                    "Name": "Code Review Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Peer Code Review",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Continuous Integration",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "zSeries/COBOL",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Debugging and Diagnostics",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Development Kits",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "C/C++",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "COBOL",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Java",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "RPG/iSeries",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Ruby",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Web/J2EE",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "File Editors and Viewers",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "File and Folder Comparison/Merge",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Integrated Development Environment",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "(X)HTML/CSS/JS",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": ".NET",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "ActionScript/Flex",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "C/C++",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "COBOL",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Database",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Domino/Lotus",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Flash",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "General",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Java",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Mobile/Hybrid",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "PHP",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Pascal",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Perl",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Power Builder",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "R",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "RPG/iSeries",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Web Publishing/Site Management",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "XML",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "eLearning/Screencasts",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "Log Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Open Source Software Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Programming Languages",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Compiled",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Data",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Interpreted",
+                        "Lvl": "5" 
+                    } ]
+                } ]
+            }, {
+                "Name": "Deployment",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Asset Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Configuration management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Release and Deployment",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Workflow Control",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Design",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Freeform Diagramming",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Interface and Integration Design",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Prototype Tooling",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "User Interface Design and Wireframes",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Enterprise Architecture Tooling",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Business Modelling",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Function Point Analysis",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Functional Modelling",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Integrated Modelling Environment",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Object Modelling",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Process Modelling",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Service Modelling",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Process",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Analysis & Discovery",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Linked Lifecycle Data Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Procedure & Guidance",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Process Design",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Process Development",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Process Execution",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Process Simulation",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Requirements",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Change Management",
+                    "Lvl": "4" 
+                } ]
+            }, {
+                "Name": "Testing",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Cross Browser Testing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Mobile Device Testing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Performance",
+                    "Lvl": "4",
+                    "Subsections": [ {
+                        "Name": "Load Testing",
+                        "Lvl": "5" 
+                    }, {
+                        "Name": "Network",
+                        "Lvl": "5" 
+                    } ]
+                }, {
+                    "Name": "System Acceptance Testing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Test & Defect Management",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Test Automation",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Test Data Masking",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "Unit Testing",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "User Acceptance Testing",
+                    "Lvl": "4" 
+                } ]
+            } ]
+        }, {
+            "Name": "User Interaction",
+            "Lvl": "2",
+            "Subsections": [ {
+                "Name": "User Messaging",
+                "Lvl": "3",
+                "Subsections": [ {
+                    "Name": "Chat",
+                    "Lvl": "4" 
+                }, {
+                    "Name": "SMS Management",
+                    "Lvl": "4" 
+                } ]
+            } ]
+        } ]
+    } ]
+}

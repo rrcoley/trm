@@ -1,0 +1,30 @@
+{
+    "Lvl": 0,
+    "Name": "Root",
+    "Subsections": [ {
+        "Lvl": 1,
+        "Name": "Application",
+        "Subsections": [ {
+            "Lvl": 2,
+            "Name": "Cloud Native",
+            "Subsections": [ {
+                "Lvl": 3,
+                "Name": "Micro Services" 
+                } ]
+            } ]
+        }, {
+        "Lvl": 1,
+        "Name": "Software",
+        "Subsections": [ {
+            "Lvl": 2,
+            "Name": "Microsoft",
+            "Subsections": [ {
+                "Lvl": 3,
+                "Name": "Powerpoint" 
+                }, {
+                "Lvl": 3,
+                "Name": "Outlook" 
+                } ]
+            } ]
+        } ]
+}
