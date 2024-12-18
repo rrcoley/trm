@@ -107,7 +107,7 @@ class Node:
 		if terse>0:
 			self.PrintObj(0,0)
 			if len(self.Obj['Category']) > 0:
-				self.PrintSubSections(0)
+				self.PrintSubSections(0, 0)
 			if len(self.Obj['Products']) > 0:
 				self.PrintProducts(0)
 		printf("\n")
@@ -163,7 +163,7 @@ class Node:
 		self.PrintObj(z,clen+plen)
 
 		if clen > 0:
-			self.PrintSubSections(z,plen)
+			self.PrintSubSections(z, plen)
 
 		if plen > 0:
 			self.PrintProducts(z)

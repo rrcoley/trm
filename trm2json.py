@@ -25,6 +25,8 @@ def UTFstr2ascii(xx):
 	xx = unidecode(xx)
 	if xx[0] == '"' and xx[len(xx)-1] == '"':
 		xx=xx.replace('\"','')
+	xx=xx.replace('\'','')
+	xx=xx.replace('\"','')
 	return xx
 
 class Node:
@@ -105,14 +107,14 @@ class Node:
 		if terse>0:
 			self.PrintObj(0,0)
 			if len(self.Obj['Category']) > 0:
-				self.PrintSubSections(0)
+				self.PrintSubSections(0, 0)
 			if len(self.Obj['Products']) > 0:
 				self.PrintProducts(0)
 		printf("\n")
 
 	###
 	def PrintObj(self, z, more):
-		olen=len(self.Obj)-2;	
+		olen=len(self.Obj)-1;	
 		for i, key in enumerate(self.Obj):
 			if key == "Category" or key == "Products":
 				continue
@@ -139,15 +141,16 @@ class Node:
 		printf("} ]\n")
 
 	###
-	def PrintSubSections(self, z):
+	def PrintSubSections(self, z, more):
 		clen=len(self.Obj['Category'])-1
 		printf("%s\"Subsections\": [ {\n",self.indent(z))
 		for i, key in enumerate(self.Obj['Category'].keys()):
-			self.Obj['Category'][key].JSON((i != clen))
-		printf(" ]\n")
+			self.Obj['Category'][key].JSON(i, (i != clen))
+		ch="," if more else ""
+		printf(" ]%s\n",ch)
 
 	###
-	def JSON(self, more=0):
+	def JSON(self, idx=0, more=0):
 		if self.Obj['Name'] == self.Root:
 			printf("{\n")
 
@@ -160,7 +163,7 @@ class Node:
 		self.PrintObj(z,clen+plen)
 
 		if clen > 0:
-			self.PrintSubSections(z)
+			self.PrintSubSections(z, plen)
 
 		if plen > 0:
 			self.PrintProducts(z)
