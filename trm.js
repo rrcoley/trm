@@ -43,27 +43,26 @@ function newSection(obj) {
 		el1.insertAdjacentHTML('afterbegin',obj.Name);
 		el1.classList.add(`Lvl${obj.Lvl}`);
 		el1.style.backgroundColor="white";
+
+		el1.addEventListener('click', (event) => {
+			if (obj.Lvl !== 1) { event.stopPropagation(); }
+			openModal(obj)
+		});
 	}
 
-	el1.addEventListener('click', (event) => {
-		if (obj.Lvl !== 1) { event.stopPropagation(); }
-		openModal(obj);
-	});
-
-	const el2 = document.createElement('div');
-	el2.classList.add('container');
-
-	el1.appendChild(el2);
-
-	//if (obj.Subsections) {
 	if (obj.Subsections && obj.Lvl < Depth) {
+		const el2 = document.createElement('div');
+		el2.classList.add('container','xxx');
+
+		el1.appendChild(el2);
+
 		obj.Subsections.forEach(subObj => {
-		console.log("SubName: "+subObj.Name);
+			console.log("SubName: "+subObj.Name);
 
-		const nele = newSection(subObj);
+			const nele = newSection(subObj);
 
-		el2.appendChild(nele);
-	    });
+			el2.appendChild(nele);
+		});
 	}
 	return el1;
 }
@@ -111,8 +110,36 @@ function setSelectValue (id, val) {
 }
 
 function openModal(obj) {
+	const modalTitle = document.getElementById('modal-title');
+	const modalDescription = document.getElementById('modal-description');
+	const modalArchitect = document.getElementById('modal-architect');
+	const modal = document.getElementById('modal');
 	console.log("openModal("+obj.Name+")\n");
+
+	modalTitle.textContent = obj.Name;
+	if (obj.Description !== undefined) {
+		modalDescription.textContent = obj.Description;
+	} else {
+		modalDescription.textContent = "";
+	}
+	if (obj.Architect !== undefined) {
+		modalArchitect.textContent = "EA: "+ea
+	}
+	modal.style.display = 'flex';	
 }
+
+document.getElementById('modal-close-x').addEventListener('click', () =>
+{
+	document.getElementById('modal').style.display="none";
+});
+
+window.addEventListener('click',(event) =>
+{
+	const modal=document.getElementById('modal');	
+	if (event.target === modal) {
+		modal.style.display='none';
+	}
+});
 
 var Depth = Number(new URLSearchParams(window.location.search).get('Depth'));
 if (Depth === null || Depth === 0) { Depth=9; }
