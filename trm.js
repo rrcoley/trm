@@ -28,8 +28,23 @@ function Main(JSONModel) {
 	if (JSONModel.Name !== "Root") {
 		console.log("Not a ROOT JSON\n");
 	}
+	preProcess(JSONModel);
+	InitDepth();
 
 	sCon.appendChild(newSection(JSONModel));
+}
+
+function preProcess(obj) {
+	console.log("Node: "+obj.Name);
+	if (obj.Lvl > maxLevel) {
+		maxLevel=obj.Lvl;
+	}
+	console.log("maxLevel: "+maxLevel);
+	if (obj.Subsections) {
+		obj.Subsections.forEach(subObj => {
+			const nele=preProcess(subObj);
+		});
+	}
 }
 
 function newSection(obj) {
@@ -57,15 +72,15 @@ function newSection(obj) {
 		el1.appendChild(el2);
 
 		obj.Subsections.forEach(subObj => {
-			console.log("SubName: "+subObj.Name);
-
 			const nele = newSection(subObj);
-
 			el2.appendChild(nele);
 		});
 	}
 	return el1;
 }
+
+// Keep track of maxLevel in JSON
+var maxLevel = 0;
 
 // Add as meany Colors as you want
 var cnames=[];
@@ -110,22 +125,53 @@ function setSelectValue (id, val) {
 }
 
 function openModal(obj) {
-	const modalTitle = document.getElementById('modal-title');
+	const modalName = document.getElementById('modal-name');
+	const modalLvl = document.getElementById('modal-lvl');
+	const modalOwner = document.getElementById('modal-owner');
+	const modalMaturity = document.getElementById('modal-maturity');
 	const modalDescription = document.getElementById('modal-description');
-	const modalArchitect = document.getElementById('modal-architect');
+	const modalProduct = document.getElementById('modal-product');
 	const modal = document.getElementById('modal');
 	console.log("openModal("+obj.Name+")\n");
 
-	modalTitle.textContent = obj.Name;
-	if (obj.Description !== undefined) {
-		modalDescription.textContent = obj.Description;
-	} else {
-		modalDescription.textContent = "";
-	}
-	if (obj.Architect !== undefined) {
-		modalArchitect.textContent = "EA: "+ea
+	if (obj.Name === undefined)	{ obj.Name="" }
+	if (obj.Lvl === undefined)	{ obj.Lvl="" }
+	if (obj.Owner === undefined) 	{ obj.Owner="" }
+	if (obj.Maturity === undefined) { obj.Maturity="" }
+	if (obj.Desc === undefined) 	{ obj.Desc="" }
+
+	modalName.innerHTML = obj.Name.bold();
+	modalName.style.textAlign = "center";
+	modalName.style.fontSize = "20pt";
+	modalName.style.color = "red";
+	modalLvl.innerHTML = "Level: ".bold()+obj.Lvl;
+	modalOwner.innerHTML = "Owner: ".bold()+obj.Owner;
+	modalMaturity.innerHTML = "Maturity: ".bold()+obj.Maturity;
+	modalDescription.innerHTML = "Description: ".bold()+obj.Desc;
+	prods=""
+	prod_dict={}
+	if (obj.Products !== undefined) {
+		obj.Products.forEach(prod => {
+			if (prod_dict[prod.Name] === undefined) {
+				prod_dict[prod.Name]=1
+				if (prods === "") 
+					prods="<br>    "+prod.Name;
+				else
+					prods=prods+"<br>    "+prod.Name;
+			}
+		});
+		modalProducts.innerHTML="Products: ".bold()+prods;
+		modalProducts.style.color = "blue";
 	}
 	modal.style.display = 'flex';	
+}
+
+function InitDepth(obj) {
+	const depthSel = document.getElementById('Depth');
+	for(let i=1; i<maxLevel; i++) {
+		depthSel.options[depthSel.options.length] = new Option('Level '+i,i);
+	}
+	depthSel.onchange=function(e) { updateURL(e,"Depth"); }
 }
 
 document.getElementById('modal-close-x').addEventListener('click', () =>
@@ -144,5 +190,3 @@ window.addEventListener('click',(event) =>
 var Depth = Number(new URLSearchParams(window.location.search).get('Depth'));
 if (Depth === null || Depth === 0) { Depth=9; }
 setSelectValue('Depth',Depth);
-
-document.getElementById("Depth").onchange=function(e){ updateURL(e,"Depth"); }

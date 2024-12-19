@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html>
+<html lang="en">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Architecture Capability Model</title>
@@ -12,16 +12,7 @@
 	<div class="header" id="header-container"></div>
 
 	<!-- Dynamic Sections Container -->
-	<select id="Depth">
-	<option value="1">Level 1</option>
-	<option value="2">Level 2</option>
-	<option value="3">Level 3</option>
-	<option value="4">Level 4</option>
-	<option value="5">Level 5</option>
-	<option value="6">Level 6</option>
-	<option value="7">Level 7</option>
-	<option value="8">Level 8</option>
-	<option value="9">Level 9</option>
+	<label for="Depth"><select id="Depth"></select>
 	</select>
 
 	<div class="body" id="body-container"></div>
@@ -30,9 +21,12 @@
 	<div id="modal" class="modal">
 		<div class="modal-content">
 			<span class="modal-close-x" id="modal-close-x">&times;</span>
-			<div id="modal-title"></div>
+			<div id="modal-name"></div>
+			<div id="modal-lvl"></div>
+			<div id="modal-owner"></div>
+			<div id="modal-maturity"></div>
 			<div id="modal-description"></div>
-			<div id="modal-architect"></div>
+			<div id="modal-products"></div>
 		</div>
 	</div>
 
