@@ -12,13 +12,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 function Main(JSONModel) {
 	console.log("Main()\n")
 
-	// Stage some colornames from the map
-	var idx=0;
-	for (var key in colorMap) {
-		cnames[idx]=key;
-		idx++;
-	} 
-
 	const sCon = document.getElementById('body-container');
 	if (sCon === null) {
 		console.log("Whoops - no 'body-container' in html\n");
@@ -29,17 +22,21 @@ function Main(JSONModel) {
 		console.log("Not a ROOT JSON\n");
 	}
 	preProcess(JSONModel);
-	InitDepth();
+	InitButtons();
 
-	sCon.appendChild(newSection(JSONModel));
+	const el=newSection(JSONModel);
+	if (el !== undefined) {
+		sCon.appendChild(el);
+	}
 }
 
 function preProcess(obj) {
-	console.log("Node: "+obj.Name);
 	if (obj.Lvl > maxLevel) {
 		maxLevel=obj.Lvl;
 	}
-	console.log("maxLevel: "+maxLevel);
+	if (obj.Lvl === "1" && categories[obj.Name] === undefined) {
+		categories[obj.Name] = 1
+	}
 	if (obj.Subsections) {
 		obj.Subsections.forEach(subObj => {
 			const nele=preProcess(subObj);
@@ -49,12 +46,18 @@ function preProcess(obj) {
 
 function newSection(obj) {
 
+	if (obj.Lvl === "1" && Category !== "All" && Category !== obj.Name) {
+		return undefined;
+	}
+
 	const el1 = document.createElement('div');
 	if (obj.Name == "Root") {
-		el1.classList.add('main-title');
-		el1.insertAdjacentHTML('afterbegin',"<h1>Technology Reference Model</h1>");
+		const el = document.getElementById('header-container');
+		el.classList.add('main-title');
+		el.insertAdjacentHTML('afterbegin',"<h1>Technology Reference Model</h1>");
+		//el1.classList.add('main-title');
+		//el1.insertAdjacentHTML('afterbegin',"<h1>Technology Reference Model</h1>");
 	} else {
-		var color = cnames[obj.Lvl];
 		el1.insertAdjacentHTML('afterbegin',obj.Name);
 		el1.classList.add(`Lvl${obj.Lvl}`);
 		el1.style.backgroundColor="white";
@@ -65,15 +68,15 @@ function newSection(obj) {
 		});
 	}
 
-	if (obj.Subsections && obj.Lvl < Depth) {
+	if (obj.Subsections && obj.Lvl <= Depth) {
 		const el2 = document.createElement('div');
 		el2.classList.add('container','xxx');
-
 		el1.appendChild(el2);
-
 		obj.Subsections.forEach(subObj => {
 			const nele = newSection(subObj);
-			el2.appendChild(nele);
+			if (nele !== undefined) {
+				el2.appendChild(nele);
+			}
 		});
 	}
 	return el1;
@@ -81,42 +84,22 @@ function newSection(obj) {
 
 // Keep track of maxLevel in JSON
 var maxLevel = 0;
+var categories = {};
+var Depth;
+var Category="All";
 
-// Add as meany Colors as you want
-var cnames=[];
-
-const colorMap = {
-        "purple":       "#9c27b0",
-        "blue":         "#2196f3",
-        "green":        "#4caf50",
-        "red":          "#f44336",
-        "orange":       "#ff9800",
-        "yellow":       "#ffeb3b",
-        "cyan":         "#00bcd4",
-        "teal":         "#009688",
-        "pink":         "#e91e63",
-        "indigo":       "#3f51b5", 
-}; 
-
-function updateURL(el,mode) 
-{
+function updateURL(el,mode) {
         switch(mode) {
         case "Depth":
                 Depth = el.target.value;
                 break;
-//        case "Mode":
- //               Mode = el.target.value;
-  //              break;
-   //     case "Model":
-    //            Model = el.target.value;
-     //           break;
+        case "Category":
+                Category = el.target.value;
+                break;
         }
         window.location.href =
-                (window.location.href.split('?')[0]) + "?Depth="+Depth;
-
-                      //  "?Model="+Model+
-                      //  "&Mode="+Mode+
-                      //  "&Depth="+Depth;
+                (window.location.href.split('?')[0]) + "?" +
+			"Depth=" + Depth + "&"+ "Category=" + Category;
         window.location.replace();
 }
 
@@ -142,8 +125,6 @@ function openModal(obj) {
 
 	modalName.innerHTML = obj.Name.bold();
 	modalName.style.textAlign = "center";
-	modalName.style.fontSize = "20pt";
-	modalName.style.color = "red";
 	modalLvl.innerHTML = "Level: ".bold()+obj.Lvl;
 	modalOwner.innerHTML = "Owner: ".bold()+obj.Owner;
 	modalMaturity.innerHTML = "Maturity: ".bold()+obj.Maturity;
@@ -161,32 +142,39 @@ function openModal(obj) {
 			}
 		});
 		modalProducts.innerHTML="Products: ".bold()+prods;
-		modalProducts.style.color = "blue";
 	}
 	modal.style.display = 'flex';	
 }
 
-function InitDepth(obj) {
+document.getElementById('modal-close-x').addEventListener('click', () => {
+	document.getElementById('modal').style.display="none";
+});
+
+function InitButtons(obj) {
 	const depthSel = document.getElementById('Depth');
 	for(let i=1; i<maxLevel; i++) {
 		depthSel.options[depthSel.options.length] = new Option('Level '+i,i);
 	}
 	depthSel.onchange=function(e) { updateURL(e,"Depth"); }
+	Depth = Number(new URLSearchParams(window.location.search).get('Depth'));
+	if (Depth === null || Depth === 0) { Depth=9; }
+	setSelectValue('Depth',Depth.toString());
+
+	const categorySel = document.getElementById('Category');
+	categorySel.options[categorySel.options.length] = new Option("All","All");
+	for (let key in categories) {
+		categorySel.options[categorySel.options.length] = new Option(key,key);
+	}
+	categorySel.onchange=function(e) { updateURL(e,"Category"); }
+	Category = new URLSearchParams(window.location.search).get('Category');
+	if (Category === null || Category === 0) { Category="None"; }
+	setSelectValue('Category',Category);
+
 }
 
-document.getElementById('modal-close-x').addEventListener('click', () =>
-{
-	document.getElementById('modal').style.display="none";
-});
-
-window.addEventListener('click',(event) =>
-{
+window.addEventListener('click',(event) => {
 	const modal=document.getElementById('modal');	
 	if (event.target === modal) {
 		modal.style.display='none';
 	}
 });
-
-var Depth = Number(new URLSearchParams(window.location.search).get('Depth'));
-if (Depth === null || Depth === 0) { Depth=9; }
-setSelectValue('Depth',Depth);

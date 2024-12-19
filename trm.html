@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html lang="en">
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Architecture Capability Model</title>
 	<link rel="stylesheet" href="./trm.css">
@@ -12,24 +12,31 @@
 	<div class="header" id="header-container"></div>
 
 	<!-- Dynamic Sections Container -->
-	<label for="Depth"><select id="Depth"></select>
-	</select>
+	<label for="Depth">Depth</label><select id="Depth"></select>
+	<label for="Category">Category</label><select id="Category"></select>
 
 	<div class="body" id="body-container"></div>
 
 	<!-- Modal for showing definitions -->
 	<div id="modal" class="modal">
 		<div class="modal-content">
+			<div id="modal-name"></div><br>
 			<span class="modal-close-x" id="modal-close-x">&times;</span>
-			<div id="modal-name"></div>
 			<div id="modal-lvl"></div>
 			<div id="modal-owner"></div>
 			<div id="modal-maturity"></div>
 			<div id="modal-description"></div>
-			<div id="modal-products"></div>
+			<div id="modal-products"></div><br>
+			<table id="modal-table">
+			    <tr>
+			    	<th>Name</th>
+			    	<th>Version</th>
+			    	<th>Description</th>
+			    	<th>Status</th>
+			    </tr>
+			</table>
 		</div>
 	</div>
-
 
 	<script type="text/javascript" src="./js/trm.js"></script>
 </body>
