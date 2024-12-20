@@ -22,6 +22,7 @@ function Main(JSONModel) {
 		console.log("Not a ROOT JSON\n");
 	}
 	preProcess(JSONModel);
+	console.log("maxLevel: "+maxLevel);
 	InitButtons();
 
 	const el=newSection(JSONModel);
@@ -45,7 +46,6 @@ function preProcess(obj) {
 }
 
 function newSection(obj) {
-
 	if (obj.Lvl === "1" && Category !== "All" && Category !== obj.Name) {
 		return undefined;
 	}
@@ -68,10 +68,10 @@ function newSection(obj) {
 		});
 	}
 
-	if (obj.Subsections && obj.Lvl <= Depth) {
-		const el2 = document.createElement('div');
-		el2.classList.add('container','xxx');
-		el1.appendChild(el2);
+	const el2 = document.createElement('div');
+	el2.classList.add('container','xxx');
+	el1.appendChild(el2);
+	if (obj.Subsections && obj.Lvl < Level) {
 		obj.Subsections.forEach(subObj => {
 			const nele = newSection(subObj);
 			if (nele !== undefined) {
@@ -85,13 +85,13 @@ function newSection(obj) {
 // Keep track of maxLevel in JSON
 var maxLevel = 0;
 var categories = {};
-var Depth;
+var Level;
 var Category="All";
 
 function updateURL(el,mode) {
         switch(mode) {
-        case "Depth":
-                Depth = el.target.value;
+        case "Level":
+                Level = el.target.value;
                 break;
         case "Category":
                 Category = el.target.value;
@@ -99,11 +99,12 @@ function updateURL(el,mode) {
         }
         window.location.href =
                 (window.location.href.split('?')[0]) + "?" +
-			"Depth=" + Depth + "&"+ "Category=" + Category;
+			"Level=" + Level + "&"+ "Category=" + Category;
         window.location.replace();
 }
 
 function setSelectValue (id, val) {
+	console.log("setSelectValue("+id+") to "+val);
         document.getElementById(id).value = val;
 }
 
@@ -113,7 +114,7 @@ function openModal(obj) {
 	const modalOwner = document.getElementById('modal-owner');
 	const modalMaturity = document.getElementById('modal-maturity');
 	const modalDescription = document.getElementById('modal-description');
-	const modalProduct = document.getElementById('modal-product');
+	const modalProducts = document.getElementById('modal-products');
 	const modal = document.getElementById('modal');
 	console.log("openModal("+obj.Name+")\n");
 
@@ -151,14 +152,15 @@ document.getElementById('modal-close-x').addEventListener('click', () => {
 });
 
 function InitButtons(obj) {
-	const depthSel = document.getElementById('Depth');
-	for(let i=1; i<maxLevel; i++) {
-		depthSel.options[depthSel.options.length] = new Option('Level '+i,i);
+	const levelSel = document.getElementById('Level');
+	for(let i=1; i<=maxLevel; i++) {
+		levelSel.options[levelSel.options.length] = new Option(i,i);
 	}
-	depthSel.onchange=function(e) { updateURL(e,"Depth"); }
-	Depth = Number(new URLSearchParams(window.location.search).get('Depth'));
-	if (Depth === null || Depth === 0) { Depth=9; }
-	setSelectValue('Depth',Depth.toString());
+	levelSel.onchange=function(e) { updateURL(e,"Level"); }
+	Level = Number(new URLSearchParams(window.location.search).get('Level'));
+	if (Level === null || Level === 0) { Level=maxLevel; }
+console.log("Setting Level to "+Level);
+	setSelectValue('Level',Level.toString());
 
 	const categorySel = document.getElementById('Category');
 	categorySel.options[categorySel.options.length] = new Option("All","All");
@@ -167,9 +169,9 @@ function InitButtons(obj) {
 	}
 	categorySel.onchange=function(e) { updateURL(e,"Category"); }
 	Category = new URLSearchParams(window.location.search).get('Category');
-	if (Category === null || Category === 0) { Category="None"; }
+	if (Category === null || Category === 0) { Category="All"; }
+console.log("Setting Cat to "+Category);
 	setSelectValue('Category',Category);
-
 }
 
 window.addEventListener('click',(event) => {
