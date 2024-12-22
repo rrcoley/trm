@@ -982,7 +982,33 @@
                 "Lvl": "3" 
             }, {
                 "Name": "Compilers & Interpreters",
-                "Lvl": "3" 
+                "Lvl": "3",
+		"Products": [ {
+			"Name": "C++",
+			"Desc": "C++ Compiler",
+			"Version": "1.0",
+			"Status": "green"
+		    }, {
+			"Name": "C",
+			"Desc": "ANSI C Compiler",
+			"Version": "1.1",
+			"Status": "green"
+		    }, {
+			"Name": "COBOL",
+			"Desc": "COBOL Compiler",
+			"Version": "1.3",
+			"Status": "green"
+		    }, {
+			"Name": "Pascal",
+			"Desc": "Pascal Compiler",
+			"Version": "1.3a",
+			"Status": "red"
+		    }, {
+			"Name": "Java",
+			"Desc": "Java Interpreter",
+			"Version": "2.0",
+			"Status": "green"
+		    } ]
             }, {
                 "Name": "Debuggers & Profilers",
                 "Lvl": "3" 
