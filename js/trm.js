@@ -6,6 +6,7 @@ var level1s = {};
 var Level;
 var Filter;
 var Category="All";
+var prod_dict={}
 
 function Main(JSONModel) {
 	console.log("Main()\n")
@@ -126,25 +127,31 @@ function openModal(obj) {
 	modalOwner.innerHTML = "Owner: ".bold()+obj.Owner;
 	modalMaturity.innerHTML = "Maturity: ".bold()+obj.Maturity;
 	modalDescription.innerHTML = "Description: ".bold()+obj.Desc;
-	prods=""
 	prod_dict={}
 	if (obj.Products !== undefined) {
 		obj.Products.forEach(prod => {
 			if (prod_dict[prod.Name] === undefined) {
 				prod_dict[prod.Name]=1
-				if (prods === "") 
-					prods="<br>    "+prod.Name;
-				else
-					prods=prods+"<br>    "+prod.Name;
+				const table = document.getElementById('modal-table');
+				var tr = table.insertRow(-1);	
+				tr.insertCell().textContent = prod.Name;	
+				tr.insertCell().textContent = prod.Version;	
+				tr.insertCell().textContent = prod.Desc;	
+				tr.insertCell().textContent = prod.Status;	
+				table.append(tr);
 			}
 		});
-		modalProducts.innerHTML="Products: ".bold()+prods;
 	}
 	modal.style.display = 'flex';	
 }
 
 document.getElementById('modal-close-x').addEventListener('click', () => {
 	document.getElementById('modal').style.display="none";
+	const table = document.getElementById('modal-table');
+	nrows=Object.keys(prod_dict).length;
+	for(let i=nrows; i>0; i--) {
+		table.deleteRow(i);
+	}
 });
 
 function wildTest(wildcard, str, star) {
