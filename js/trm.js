@@ -1,13 +1,11 @@
-document.addEventListener('DOMContentLoaded', async function () {
-	const url = "http://localhost:80/json/trm.json";
-
-	async function getJSON(Url) {
-		const response = await fetch(Url);
-		return await response.json();
-	}
-	
-	Main(await getJSON(url));
-});
+// Keep track of maxLevel in JSON
+var maxLevel = 0;
+var categories = {};
+var idx=0;
+var level1s = {};
+var Level;
+var Filter;
+var Category="All";
 
 function Main(JSONModel) {
 	console.log("Main()\n")
@@ -21,6 +19,8 @@ function Main(JSONModel) {
 	if (JSONModel.Name !== "Root") {
 		console.log("Not a ROOT JSON\n");
 	}
+	categories={};
+	idx=0;
 	preProcess(JSONModel);
 	console.log("maxLevel: "+maxLevel);
 	InitButtons();
@@ -35,9 +35,11 @@ function preProcess(obj) {
 	if (obj.Lvl > maxLevel) {
 		maxLevel=obj.Lvl;
 	}
-	if (obj.Lvl === "1" && categories[obj.Name] === undefined) {
-		categories[obj.Name] = 1
+	if (obj.Lvl === "1" && level1s[obj.Name] === undefined) {
+		level1s[obj.Name] = 1
 	}
+	obj.idx = idx++;
+	categories[obj.idx]=obj.Name;
 	if (obj.Subsections) {
 		obj.Subsections.forEach(subObj => {
 			const nele=preProcess(subObj);
@@ -54,16 +56,16 @@ function newSection(obj) {
 	if (obj.Name == "Root") {
 		const el = document.getElementById('header-container');
 		el.classList.add('main-title');
-		el.insertAdjacentHTML('afterbegin',"<h1>Technology Reference Model</h1>");
-		//el1.classList.add('main-title');
-		//el1.insertAdjacentHTML('afterbegin',"<h1>Technology Reference Model</h1>");
+		el.insertAdjacentHTML('afterbegin',"Technology Reference Model");
 	} else {
 		el1.insertAdjacentHTML('afterbegin',obj.Name);
+		//console.log(obj.Name);
 		el1.classList.add(`Lvl${obj.Lvl}`);
+		el1.id=obj.idx;
 		el1.style.backgroundColor="white";
 
-		el1.addEventListener('click', (event) => {
-			if (obj.Lvl !== 1) { event.stopPropagation(); }
+		el1.addEventListener('click', (ev) => {
+			if (obj.Lvl !== 1) { ev.stopPropagation(); }
 			openModal(obj)
 		});
 	}
@@ -81,12 +83,6 @@ function newSection(obj) {
 	}
 	return el1;
 }
-
-// Keep track of maxLevel in JSON
-var maxLevel = 0;
-var categories = {};
-var Level;
-var Category="All";
 
 function updateURL(el,mode) {
         switch(mode) {
@@ -126,7 +122,7 @@ function openModal(obj) {
 
 	modalName.innerHTML = obj.Name.bold();
 	modalName.style.textAlign = "center";
-	modalLvl.innerHTML = "Level: ".bold()+obj.Lvl;
+	modalLvl.innerHTML = "Level: ".bold()+obj.Lvl+" "+obj.idx;
 	modalOwner.innerHTML = "Owner: ".bold()+obj.Owner;
 	modalMaturity.innerHTML = "Maturity: ".bold()+obj.Maturity;
 	modalDescription.innerHTML = "Description: ".bold()+obj.Desc;
@@ -151,27 +147,66 @@ document.getElementById('modal-close-x').addEventListener('click', () => {
 	document.getElementById('modal').style.display="none";
 });
 
+function wildTest(wildcard, str, star) {
+	if (wildcard !== "" && star) {
+		wildcard=wildcard+"*";
+	}
+	// regexp escape 
+	let w = wildcard.replace(/[.+^${}()|[\]\\]/g, '\\$&'); 
+	const re = new RegExp(`^${w.replace(/\*/g,'.*').replace(/\?/g,'.')}$`,'i');
+	return re.test(str); // remove last 'i' above to have case sensitive
+}
+
 function InitButtons(obj) {
 	const levelSel = document.getElementById('Level');
-	for(let i=1; i<=maxLevel; i++) {
+	for(let i=maxLevel; i>0; i--) {
 		levelSel.options[levelSel.options.length] = new Option(i,i);
 	}
 	levelSel.onchange=function(e) { updateURL(e,"Level"); }
 	Level = Number(new URLSearchParams(window.location.search).get('Level'));
 	if (Level === null || Level === 0) { Level=maxLevel; }
-console.log("Setting Level to "+Level);
 	setSelectValue('Level',Level.toString());
 
 	const categorySel = document.getElementById('Category');
 	categorySel.options[categorySel.options.length] = new Option("All","All");
-	for (let key in categories) {
+	for (let key in level1s) {
 		categorySel.options[categorySel.options.length] = new Option(key,key);
 	}
 	categorySel.onchange=function(e) { updateURL(e,"Category"); }
 	Category = new URLSearchParams(window.location.search).get('Category');
 	if (Category === null || Category === 0) { Category="All"; }
-console.log("Setting Cat to "+Category);
 	setSelectValue('Category',Category);
+
+	const filter = document.getElementById('Filter');
+
+	filter.addEventListener('keyup', (ev) => {
+		Filter=filter.value;
+		for (var id in categories) {
+			var key=categories[id].toLowerCase();
+			el=document.getElementById(id);
+			if (el === null) continue;
+			if (wildTest(Filter,key,true)) {
+				el.style.backgroundColor="#ADDDFA";
+			} else {
+				el.style.backgroundColor="white";
+			}
+		}
+	});
+}
+
+function updateURL(el,mode) {
+        switch(mode) {
+        case "Level":
+                Level = el.target.value;
+                break;
+        case "Category":
+                Category = el.target.value;
+                break;
+	}
+	window.location.href =
+                (window.location.href.split('?')[0]) + "?" +
+			"Level=" + Level + "&"+ "Category=" + Category;
+        window.location.replace();
 }
 
 window.addEventListener('click',(event) => {
@@ -179,4 +214,15 @@ window.addEventListener('click',(event) => {
 	if (event.target === modal) {
 		modal.style.display='none';
 	}
+});
+
+document.addEventListener('DOMContentLoaded', async function () {
+	const url = "http://localhost:80/json/trm.json";
+
+	async function getJSON(Url) {
+		const response = await fetch(Url);
+		return await response.json();
+	}
+	
+	Main(await getJSON(url));
 });
