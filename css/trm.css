@@ -1,14 +1,44 @@
-h1 {
+#header-container {
+	background: black;
+	border: 2pt solid white;
+	height: 40pt;
+	padding: 10pt;
+	line-height: 30pt;
 	text-align: center;
+	color: white;
+	font-weight: normal;
+	font-size: 24pt;
 }
 
-label {
-	color: teal;
+.optiona {
+	position: absolute;
+	top: 65px;
+	left: 20px;
+	color: white;
 	font-weight: bold;
-	display: inline;
 	font-size: 12px;
 }
-label:after { content: ": " }
+
+.optionb {
+	position: absolute;
+	top: 65px;
+	left: 100px;
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.optionc {
+	position: absolute;
+	top: 65px;
+	right: 1px;
+	color: white;
+	align: right;
+	width: 350px;
+	vertical-align: super;
+	font-weight: bold;
+	font-size: 12px;
+}
 
 .container {
 	display: flex;
@@ -63,7 +93,7 @@ label:after { content: ": " }
         padding: 20px;
         border-radius: 8px;
         box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
-        width: 500px;
+        width: 600px;
         text-align: left;
         position: relative;
 	font-size: 12px;
@@ -71,8 +101,8 @@ label:after { content: ": " }
 
 #modal-name {
         font-weight: bold;
-	font-size: 16px;
-	color: red;
+	font-size: 18px;
+	color: darkred;
         text-align: center;
 }
 
