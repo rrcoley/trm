@@ -9,11 +9,19 @@
 
 
 <body>
-	<div class="header" id="header-container"></div>
+	<div id="header-container"></div>
 
 	<!-- Dynamic Sections Container -->
-	<label for="Level">Level</label><select id="Level"></select>
-	<label for="Category">Category</label><select id="Category"></select>
+	<div class="optiona">
+		<label>Level :</label><select id="Level"></select>
+	</div>
+	<div class="optionb">
+		<label>Category :</label><select id="Category"></select>
+	</div>
+	<div class="optionc">
+	<label>Filter :</label>
+		<input type="text" size="40" id="Filter"/>
+	</div>
 
 	<div class="body" id="body-container"></div>
 
@@ -22,8 +30,8 @@
 		<div class="modal-content">
 			<div id="modal-name"></div><br>
 			<span class="modal-close-x" id="modal-close-x">&times;</span>
-			<div id="modal-lvl"></div>
 			<div id="modal-owner"></div>
+			<div id="modal-lvl"></div>
 			<div id="modal-maturity"></div>
 			<div id="modal-description"></div>
 			<div id="modal-products"></div><br>
