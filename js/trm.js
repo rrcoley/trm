@@ -1,8 +1,9 @@
 // Keep track of maxLevel in JSON
+var categories = {};		// Idx id returns obj.Name
+var level1s = {};		// This is dictionary of the level1 Names only
+var Products = {};
 var maxLevel = 0;
-var categories = {};
 var idx=0;
-var level1s = {};
 var Level;
 var Filter;
 var Category="All";
@@ -82,17 +83,23 @@ function newSection(obj) {
 			}
 		});
 	}
+	if (obj.Products !== undefined) {
+		// Cache Products
+		obj.Products.forEach(prod => {
+			key="{"+prod.Name+"}{"+prod.Version+"}";
+			if (Products[key] === undefined) {
+				Products[key] = prod;
+				//console.log("Key: ["+key+"] = "+Products[key].Name);
+			}
+		});
+	}
 	return el1;
 }
 
 function updateURL(el,mode) {
         switch(mode) {
-        case "Level":
-                Level = el.target.value;
-                break;
-        case "Category":
-                Category = el.target.value;
-                break;
+        case "Level":    Level    = el.target.value; break;
+        case "Category": Category = el.target.value; break;
         }
         window.location.href =
                 (window.location.href.split('?')[0]) + "?" +
@@ -130,10 +137,16 @@ function openModal(obj) {
 	prod_dict={}
 	prodRows=0;
 	if (obj.Products !== undefined) {
+		var createClickHandler = function(obj) {
+			return function() { 
+				// Access to all obj properties now
+				alert("Name: "+obj.Name+" Version: "+obj.Version); 
+			}
+		}
 		obj.Products.forEach(prod => {
-			key=prod.Name+"{}"+prod.Version;
+			key="{"+prod.Name+"}{"+prod.Version+"}";
 			if (prod_dict[key] === undefined) {
-				prod_dict[key]=1
+				prod_dict[key]=prod;
 				const table = document.getElementById('modal-table');
 				var tr = table.insertRow(-1);	
 				tr.insertCell().textContent = prod.Name;	
@@ -162,6 +175,7 @@ function openModal(obj) {
 				tr.insertCell().textContent = prod.Desc;	
 				table.append(tr);
 				prodRows++;
+				tr.onclick = createClickHandler(prod);
 			}
 		});
 		console.log("ProdRows="+prodRows);	
@@ -173,17 +187,15 @@ document.getElementById('modal-close-x').addEventListener('click', () => {
 	document.getElementById('modal').style.display="none";
 	const table = document.getElementById('modal-table');
 	nrows=Object.keys(prod_dict).length;
-	console.log("About to delete "+prodRows+" rows");
+	//console.log("About to delete "+prodRows+" rows");
 	for(let i=prodRows; i>0; i--) {
 		table.deleteRow(i);
 		prodRows--;
 	}
-});
+})
 
 function wildTest(wildcard, str, star) {
-	if (wildcard !== "" && star) {
-		wildcard=wildcard+"*";
-	}
+	if (wildcard !== "" && star) { wildcard=wildcard+"*"; }
 	// regexp escape 
 	let w = wildcard.replace(/[.+^${}()|[\]\\]/g, '\\$&'); 
 	const re = new RegExp(`^${w.replace(/\*/g,'.*').replace(/\?/g,'.')}$`,'i');
@@ -254,7 +266,7 @@ window.addEventListener('click',(event) => {
 	if (event.target === modal) {
 		modal.style.display='none';
 	}
-});
+})
 
 document.addEventListener('DOMContentLoaded', async function () {
 	const url = "http://localhost:80/json/trm.json";
@@ -265,4 +277,4 @@ document.addEventListener('DOMContentLoaded', async function () {
 	}
 	
 	Main(await getJSON(url));
-});
+})
