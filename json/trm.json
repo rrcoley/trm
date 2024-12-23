@@ -994,6 +994,11 @@
 			"Version": "1.1",
 			"Status": "green"
 		    }, {
+			"Name": "C",
+			"Desc": "ANSI C Compiler",
+			"Version": "1.2",
+			"Status": "green"
+		    }, {
 			"Name": "COBOL",
 			"Desc": "COBOL Compiler",
 			"Version": "1.3",
