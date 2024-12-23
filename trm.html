@@ -12,35 +12,36 @@
 	<div id="header-container"></div>
 
 	<!-- Dynamic Sections Container -->
-	<div class="optiona">
+	<div id="optiona">
 		<label>Level :</label><select id="Level"></select>
 	</div>
-	<div class="optionb">
+	<div id="optionb">
 		<label>Category :</label><select id="Category"></select>
 	</div>
-	<div class="optionc">
+	<div id="optionc"><span>
 	<label>Filter :</label>
-		<input type="text" size="40" id="Filter"/>
+		<input type="text" size="30" id="Filter"/>
+		<input type="text" size="6" disabled id="Counter"/>
+	</span>
 	</div>
 
 	<div class="body" id="body-container"></div>
 
 	<!-- Modal for showing definitions -->
-	<div id="modal" class="modal">
-		<div class="modal-content">
+	<div id="modal">
+		<div id="modal-content">
 			<div id="modal-name"></div><br>
-			<span class="modal-close-x" id="modal-close-x">&times;</span>
+			<span id="modal-close-x">&times;</span>
 			<div id="modal-owner"></div>
 			<div id="modal-lvl"></div>
 			<div id="modal-maturity"></div>
 			<div id="modal-description"></div>
-			<div id="modal-products"></div><br>
 			<table id="modal-table">
-			    <tr id=>
-			    	<th>Name</th>
-			    	<th>Version</th>
+			    <tr height=30px vertical-align=bottom>
+			    	<th width=120px>Name</th>
+			    	<th width=60px>Version</th>
+			    	<th width=50px>Status</th>
 			    	<th>Description</th>
-			    	<th>Status</th>
 			    </tr>
 			</table>
 		</div>
