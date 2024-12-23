@@ -6,7 +6,7 @@ var level1s = {};
 var Level;
 var Filter;
 var Category="All";
-var prod_dict={}
+var prodRows=0;
 
 function Main(JSONModel) {
 	console.log("Main()\n")
@@ -123,24 +123,48 @@ function openModal(obj) {
 
 	modalName.innerHTML = obj.Name.bold();
 	modalName.style.textAlign = "center";
-	modalLvl.innerHTML = "Level: ".bold()+obj.Lvl+" "+obj.idx;
+	modalLvl.innerHTML = "Level: ".bold()+obj.Lvl+"&nbsp&nbsp&nbsp&nbsp["+obj.idx+"]";
 	modalOwner.innerHTML = "Owner: ".bold()+obj.Owner;
 	modalMaturity.innerHTML = "Maturity: ".bold()+obj.Maturity;
 	modalDescription.innerHTML = "Description: ".bold()+obj.Desc;
 	prod_dict={}
+	prodRows=0;
 	if (obj.Products !== undefined) {
 		obj.Products.forEach(prod => {
-			if (prod_dict[prod.Name] === undefined) {
-				prod_dict[prod.Name]=1
+			key=prod.Name+"{}"+prod.Version;
+			if (prod_dict[key] === undefined) {
+				prod_dict[key]=1
 				const table = document.getElementById('modal-table');
 				var tr = table.insertRow(-1);	
 				tr.insertCell().textContent = prod.Name;	
-				tr.insertCell().textContent = prod.Version;	
+
+				cell=tr.insertCell();
+				cell.textContent = prod.Version;	
+				cell.style.textAlign = "center";
+
+				cell = tr.insertCell();
+				cell.textContent = prod.Status;
+				cell.style.color = "white";
+				cell.style.textAlign = "center";
+
+				switch (prod.Status) {
+				case "red":
+					cell.bgColor = "red";
+					break;
+				case "amber":
+					cell.bgColor = "amber";
+					break;
+				case "green":
+					cell.bgColor = "green";
+					break;
+				}
+
 				tr.insertCell().textContent = prod.Desc;	
-				tr.insertCell().textContent = prod.Status;	
 				table.append(tr);
+				prodRows++;
 			}
 		});
+		console.log("ProdRows="+prodRows);	
 	}
 	modal.style.display = 'flex';	
 }
@@ -149,8 +173,10 @@ document.getElementById('modal-close-x').addEventListener('click', () => {
 	document.getElementById('modal').style.display="none";
 	const table = document.getElementById('modal-table');
 	nrows=Object.keys(prod_dict).length;
-	for(let i=nrows; i>0; i--) {
+	console.log("About to delete "+prodRows+" rows");
+	for(let i=prodRows; i>0; i--) {
 		table.deleteRow(i);
+		prodRows--;
 	}
 });
 
@@ -188,16 +214,23 @@ function InitButtons(obj) {
 
 	filter.addEventListener('keyup', (ev) => {
 		Filter=filter.value;
+		i=0;
 		for (var id in categories) {
 			var key=categories[id].toLowerCase();
 			el=document.getElementById(id);
 			if (el === null) continue;
 			if (wildTest(Filter,key,true)) {
 				el.style.backgroundColor="#ADDDFA";
+				i++;
 			} else {
 				el.style.backgroundColor="white";
 			}
 		}
+		el=document.getElementById('Counter');
+		if (i===0) 
+			el.value="";
+		else
+			el.value=i;
 	});
 }
 
