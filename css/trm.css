@@ -10,7 +10,7 @@
 	font-size: 24pt;
 }
 
-.optiona {
+#optiona {
 	position: absolute;
 	top: 65px;
 	left: 20px;
@@ -19,7 +19,7 @@
 	font-size: 12px;
 }
 
-.optionb {
+#optionb {
 	position: absolute;
 	top: 65px;
 	left: 100px;
@@ -28,16 +28,22 @@
 	font-size: 12px;
 }
 
-.optionc {
+#optionc {
 	position: absolute;
 	top: 65px;
 	right: 1px;
 	color: white;
 	align: right;
-	width: 350px;
+	width: 330px;
 	vertical-align: super;
 	font-weight: bold;
 	font-size: 12px;
+}
+
+#Counter {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
 }
 
 .container {
@@ -64,6 +70,11 @@
 	cursor: pointer;
 }
 
+.container :hover:not(.xxx):not(:has(*:hover)):not(:focus-visible):not(.selected), 
+.container *:hover:not(.xxx):not(:has(*:hover)):not(:focus-visible):not(.selected){
+    outline: 3px solid blue;
+}
+
 .Lvl1 { font-size: 95%; color: red; }
 .Lvl2 { font-size: 90%; color: blue; }
 .Lvl3 { font-size: 85%; color: green; }
@@ -75,7 +86,7 @@
 .Lvl9 { font-size: 55%; color: black; }
 
 /* Modal styling */
-.modal {
+#modal {
         display: none;
         position: fixed;
         z-index: 999;
@@ -86,46 +97,67 @@
         background-color: rgba(0, 0, 0, 0.5);
         justify-content: center;
         align-items: center;
+	margin: 0px;
 }
 
-.modal-content {
+#modal-content {
         background-color: #fff;
-        padding: 20px;
+        padding: 10px;
         border-radius: 8px;
-        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+        #box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
         width: 600px;
         text-align: left;
         position: relative;
 	font-size: 12px;
+	border: 0px;
 }
 
 #modal-name {
         font-weight: bold;
 	font-size: 18px;
-	color: darkred;
+	color: white;
+	height: 36px;	
+	line-height: 36px;
         text-align: center;
+	vertical-align: middle;
+        background-color: #002080;
+	padding: 6px;
 }
 
-.modal-close-x {
+#modal-close-x {
         position: absolute;
         top: 10px;
-        right: 10px;
+        right: 15px;
         cursor: pointer;
         font-weight: bold;
         font-size: 20px;
+	color: white;
 }
 
-table {
+#modal-close-x:hover {
+	color: #bfbfbf;
+}
+
+#modal-table {
+	font-family: Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
 	width: 100%;
-	font-size: 85%;
+	margin-top: 15px;
 }
 
-tr {
-	border-bottom: 1px solid #ddd;
+#modal-table td, #modal-table th {
+	border: 1px solid #ddd;
+	padding: 4px;
 }
+#modal-table tr { font-size: 10px; }
 
-.container :hover:not(.xxx):not(:has(*:hover)):not(:focus-visible):not(.selected), 
-.container *:hover:not(.xxx):not(:has(*:hover)):not(:focus-visible):not(.selected){
-    outline: 3px solid blue;
+#modal-table tr:nth-child(even){background-color: #f2f2f2;}
+#modal-table tr:hover {background-color: #ddd;}
+
+#modal-table th {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	background-color: #0099ff;
+	color: white;
 }
