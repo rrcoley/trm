@@ -1,7 +1,6 @@
 // Keep track of maxLevel in JSON
-var categories = {};		// Idx id returns obj.Name
+var Categories = {};		// Idx id returns obj.Name
 var level1s = {};		// This is dictionary of the level1 Names only
-var Products = {};
 var maxLevel = 0;
 var idx=0;
 var Level;
@@ -10,8 +9,6 @@ var Category="All";
 var prodRows=0;
 
 function Main(JSONModel) {
-	console.log("Main()\n")
-
 	const sCon = document.getElementById('body-container');
 	if (sCon === null) {
 		console.log("Whoops - no 'body-container' in html\n");
@@ -21,10 +18,9 @@ function Main(JSONModel) {
 	if (JSONModel.Name !== "Root") {
 		console.log("Not a ROOT JSON\n");
 	}
-	categories={};
+	Categories={};
 	idx=0;
 	preProcess(JSONModel);
-	console.log("maxLevel: "+maxLevel);
 	InitButtons();
 
 	const el=newSection(JSONModel);
@@ -41,7 +37,7 @@ function preProcess(obj) {
 		level1s[obj.Name] = 1
 	}
 	obj.idx = idx++;
-	categories[obj.idx]=obj.Name;
+	Categories[obj.idx]={ 'Name': obj.Name, 'Products': obj.Products };
 	if (obj.Subsections) {
 		obj.Subsections.forEach(subObj => {
 			const nele=preProcess(subObj);
@@ -61,7 +57,6 @@ function newSection(obj) {
 		el.insertAdjacentHTML('afterbegin',"Technology Reference Model");
 	} else {
 		el1.insertAdjacentHTML('afterbegin',obj.Name);
-		//console.log(obj.Name);
 		el1.classList.add(`Lvl${obj.Lvl}`);
 		el1.id=obj.idx;
 		el1.style.backgroundColor="white";
@@ -83,21 +78,11 @@ function newSection(obj) {
 			}
 		});
 	}
-	if (obj.Products !== undefined) {
-		// Cache Products
-		obj.Products.forEach(prod => {
-			key="{"+prod.Name+"}{"+prod.Version+"}";
-			if (Products[key] === undefined) {
-				Products[key] = prod;
-				//console.log("Key: ["+key+"] = "+Products[key].Name);
-			}
-		});
-	}
 	return el1;
 }
 
-function updateURL(el,mode) {
-        switch(mode) {
+function updateURL(el,opt) {
+        switch(opt) {
         case "Level":    Level    = el.target.value; break;
         case "Category": Category = el.target.value; break;
         }
@@ -108,7 +93,6 @@ function updateURL(el,mode) {
 }
 
 function setSelectValue (id, val) {
-	console.log("setSelectValue("+id+") to "+val);
         document.getElementById(id).value = val;
 }
 
@@ -118,15 +102,11 @@ function openModal(obj) {
 	const modalOwner = document.getElementById('modal-owner');
 	const modalMaturity = document.getElementById('modal-maturity');
 	const modalDescription = document.getElementById('modal-description');
-	const modalProducts = document.getElementById('modal-products');
 	const modal = document.getElementById('modal');
-	console.log("openModal("+obj.Name+")\n");
-
-	if (obj.Name === undefined)	{ obj.Name="" }
-	if (obj.Lvl === undefined)	{ obj.Lvl="" }
-	if (obj.Owner === undefined) 	{ obj.Owner="" }
-	if (obj.Maturity === undefined) { obj.Maturity="" }
-	if (obj.Desc === undefined) 	{ obj.Desc="" }
+	const fields = ["Name","Lvl","Owner","Maturity","Desc"];
+	for(let i=0;i<fields.length;i++) {
+		if (obj[fields[i]] ===  undefined) obj[fields[i]]=""
+	}
 
 	modalName.innerHTML = obj.Name.bold();
 	modalName.style.textAlign = "center";
@@ -144,9 +124,10 @@ function openModal(obj) {
 			}
 		}
 		obj.Products.forEach(prod => {
-			key="{"+prod.Name+"}{"+prod.Version+"}";
+			key=prod.Name+"~"+prod.Version+"}";
 			if (prod_dict[key] === undefined) {
 				prod_dict[key]=prod;
+
 				const table = document.getElementById('modal-table');
 				var tr = table.insertRow(-1);	
 				tr.insertCell().textContent = prod.Name;	
@@ -178,7 +159,6 @@ function openModal(obj) {
 				tr.onclick = createClickHandler(prod);
 			}
 		});
-		console.log("ProdRows="+prodRows);	
 	}
 	modal.style.display = 'flex';	
 }
@@ -187,7 +167,6 @@ document.getElementById('modal-close-x').addEventListener('click', () => {
 	document.getElementById('modal').style.display="none";
 	const table = document.getElementById('modal-table');
 	nrows=Object.keys(prod_dict).length;
-	//console.log("About to delete "+prodRows+" rows");
 	for(let i=prodRows; i>0; i--) {
 		table.deleteRow(i);
 		prodRows--;
@@ -202,7 +181,32 @@ function wildTest(wildcard, str, star) {
 	return re.test(str); // remove last 'i' above to have case sensitive
 }
 
+function ProductMatch(Filter,Products) {
+	var j=0;
+	if (Products !== undefined) {
+		Products.forEach(prod => {
+			if (wildTest(Filter,prod.Name,true)) {
+				j++;
+			}
+		});
+	}
+	return j;
+}
+
+function radiohandler() {
+	document.getElementById('Filter').value="";
+	document.getElementById('Counter').value="";
+	for (var id in Categories) {
+		el=document.getElementById(id);
+		if (el === null) continue;
+		el.style.backgroundColor="white";
+	}
+}
+
 function InitButtons(obj) {
+	document.getElementById('capability').onclick = radiohandler;
+	document.getElementById('product').onclick = radiohandler;
+
 	const levelSel = document.getElementById('Level');
 	for(let i=maxLevel; i>0; i--) {
 		levelSel.options[levelSel.options.length] = new Option(i,i);
@@ -226,12 +230,15 @@ function InitButtons(obj) {
 
 	filter.addEventListener('keyup', (ev) => {
 		Filter=filter.value;
+		cap=(document.getElementById("capability").checked) ? true : false;
+
 		i=0;
-		for (var id in categories) {
-			var key=categories[id].toLowerCase();
+		for (var id in Categories) {
 			el=document.getElementById(id);
 			if (el === null) continue;
-			if (wildTest(Filter,key,true)) {
+
+			if ((cap===true && wildTest(Filter,Categories[id].Name,true)) ||
+			    (cap===false && ProductMatch(Filter,Categories[id].Products))) {
 				el.style.backgroundColor="#ADDDFA";
 				i++;
 			} else {
