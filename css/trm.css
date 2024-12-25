@@ -31,6 +31,15 @@
 #optionc {
 	position: absolute;
 	top: 65px;
+	right: 350px;
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#optiond {
+	position: absolute;
+	top: 65px;
 	right: 1px;
 	color: white;
 	align: right;
