@@ -9,19 +9,30 @@ var Category="All";
 var prodRows=0;
 
 function Main(JSONModel) {
+	catlen=Object.keys(Categories).length;
+
+	console.log("Main("+catlen+")\n");
 	const sCon = document.getElementById('body-container');
 	if (sCon === null) {
 		console.log("Whoops - no 'body-container' in html\n");
 	}
-
-	console.log(JSONModel);
-	if (JSONModel.Name !== "Root") {
-		console.log("Not a ROOT JSON\n");
+	if (catlen == 0) {
+		console.log(JSONModel);
+		if (JSONModel.Name !== "Root") {
+			console.log("Not a ROOT JSON\n");
+		}
+		Categories={};
+		idx=0;
+		preProcess(JSONModel);
+		InitButtons();
+	} else {
+		// Delete sCon children so we can start again
+		while (sCon.firstChild) {
+			sCon.removeChild(sCon.lastChild);
+		}
+		const el = document.getElementById('header-container');
+		el.removeChild(el.lastChild);
 	}
-	Categories={};
-	idx=0;
-	preProcess(JSONModel);
-	InitButtons();
 
 	const el=newSection(JSONModel);
 	if (el !== undefined) {
@@ -262,10 +273,11 @@ function updateURL(el,mode) {
                 Category = el.target.value;
                 break;
 	}
-	window.location.href =
-                (window.location.href.split('?')[0]) + "?" +
-			"Level=" + Level + "&"+ "Category=" + Category;
-        window.location.replace();
+	//window.location.href =
+         //       (window.location.href.split('?')[0]) + "?" +
+	//		"Level=" + Level + "&"+ "Category=" + Category;
+        //window.location.replace();
+	Main(JsonData);
 }
 
 window.addEventListener('click',(event) => {
@@ -278,10 +290,12 @@ window.addEventListener('click',(event) => {
 document.addEventListener('DOMContentLoaded', async function () {
 	const url = "http://localhost:80/json/trm.json";
 
+	console.log("DOMContentLoaded\n");
 	async function getJSON(Url) {
 		const response = await fetch(Url);
 		return await response.json();
 	}
-	
-	Main(await getJSON(url));
+	//Main(await getJSON(url));
+	JsonData = await getJSON(url);
+	Main(JsonData);
 })
