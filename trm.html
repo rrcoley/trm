@@ -7,31 +7,37 @@
 	<link rel="stylesheet" href="./css/trm.css">
 </head>
 
-
 <body>
 <div class="viewer-container">
-	<div id="header-container"></div>
+
+	<div id="header-container">
+		<div id="title-container"></div>
+
+		<div id="DCategory">
+			<label>Category :</label>
+			<select id="Category"></select>
+		</div>
+		<div id="DRange">
+			<label>Level :</label>
+			<span id="rangeValue"></span>
+			<input id="Range" class="range" type="range" value="99"></input>
+		</div>
+		<div id="DCapOrProd">
+			<input type="radio" id="Capability" name="Mode" value="Capability" checked>
+			<label for="capability">Capability</label>
+			<input type="radio" id="Product" name="Mode" value="Product">
+			<label for="product">Product</label>
+		</div>
+		<div id="DFilter">
+			<label>Filter :</label>
+			<input type="text" size="30" id="Filter"/>
+		</div>
+		<div id="DCounter">
+			<input type="text" size="6" disabled id="Counter"/>
+		</div>
+	</div>
 
 	<!-- Dynamic Sections Container -->
-	<div id="optiona">
-		<label>Level :</label><select id="Level"></select>
-	</div>
-	<div id="optionb">
-		<label>Category :</label><select id="Category"></select>
-	</div>
-	<div id="optionc">
-	<input type="radio" id="capability" name="Mode" value="Capability" checked>
-	<label for="capability">Capability</label>
-	<input type="radio" id="product" name="Mode" value="Product">
-	<label for="product">Product</label>
-	</div>
-	<div id="optiond"><span>
-	<label>Filter :</label>
-		<input type="text" size="30" id="Filter"/>
-		<input type="text" size="6" disabled id="Counter"/>
-	</span>
-	</div>
-
 	<div class="body" id="body-container"></div>
 
 	<!-- Modal for showing definitions -->
