@@ -30,8 +30,6 @@ function Main(JSONModel) {
 		while (sCon.firstChild) {
 			sCon.removeChild(sCon.lastChild);
 		}
-		const el = document.getElementById('header-container');
-		el.removeChild(el.lastChild);
 	}
 
 	const el=newSection(JSONModel);
@@ -63,9 +61,11 @@ function newSection(obj) {
 
 	const el1 = document.createElement('div');
 	if (obj.Name == "Root") {
-		const el = document.getElementById('header-container');
-		el.classList.add('main-title');
-		el.insertAdjacentHTML('afterbegin',"Technology Reference Model");
+		const el = document.getElementById('title-container');
+		if (el.innerHTML.length == 0) {
+			el.classList.add('main-title');
+			el.insertAdjacentHTML('afterbegin',"Technology Reference Model");
+		}
 	} else {
 		el1.insertAdjacentHTML('afterbegin',obj.Name);
 		el1.classList.add(`Lvl${obj.Lvl}`);
@@ -90,17 +90,6 @@ function newSection(obj) {
 		});
 	}
 	return el1;
-}
-
-function updateURL(el,opt) {
-        switch(opt) {
-        case "Level":    Level    = el.target.value; break;
-        case "Category": Category = el.target.value; break;
-        }
-        window.location.href =
-                (window.location.href.split('?')[0]) + "?" +
-			"Level=" + Level + "&"+ "Category=" + Category;
-        window.location.replace();
 }
 
 function setSelectValue (id, val) {
@@ -214,18 +203,45 @@ function radiohandler() {
 	}
 }
 
-function InitButtons(obj) {
-	document.getElementById('capability').onclick = radiohandler;
-	document.getElementById('product').onclick = radiohandler;
+function HighlightFilterBoxes() {
+	cap=(document.getElementById("Capability").checked) ? true : false;
 
-	const levelSel = document.getElementById('Level');
-	for(let i=maxLevel; i>0; i--) {
-		levelSel.options[levelSel.options.length] = new Option(i,i);
+	i=0;
+	for (var id in Categories) {
+		el=document.getElementById(id);
+		if (el === null) continue;
+
+		if ((cap===true && wildTest(Filter,Categories[id].Name,true)) ||
+		    (cap===false && ProductMatch(Filter,Categories[id].Products))) {
+			el.style.backgroundColor="#ADDDFA";
+			i++;
+		} else {
+			el.style.backgroundColor="white";
+		}
 	}
-	levelSel.onchange=function(e) { updateURL(e,"Level"); }
-	Level = Number(new URLSearchParams(window.location.search).get('Level'));
-	if (Level === null || Level === 0) { Level=maxLevel; }
-	setSelectValue('Level',Level.toString());
+	el=document.getElementById('Counter');
+	if (i===0) 
+		el.value="";
+	else
+		el.value=i;
+}
+
+function InitButtons(obj) {
+	document.getElementById('Capability').onclick = radiohandler;
+	document.getElementById('Product').onclick = radiohandler;
+	range=document.getElementById('Range');
+	range.min = 1;
+	range.max = maxLevel;
+	if (Level === undefined || Level === null || Level === 0) { Level=maxLevel; }
+	setSelectValue('Range',Level);
+
+	document.getElementById('rangeValue').innerHTML=range.value;
+	range.addEventListener('input', (ev) => {
+		document.getElementById('rangeValue').innerHTML=range.value;
+		updateURL(ev,"Level");
+		// Need to reset Filter at this point
+		HighlightFilterBoxes();
+	});
 
 	const categorySel = document.getElementById('Category');
 	categorySel.options[categorySel.options.length] = new Option("All","All");
@@ -241,26 +257,7 @@ function InitButtons(obj) {
 
 	filter.addEventListener('keyup', (ev) => {
 		Filter=filter.value;
-		cap=(document.getElementById("capability").checked) ? true : false;
-
-		i=0;
-		for (var id in Categories) {
-			el=document.getElementById(id);
-			if (el === null) continue;
-
-			if ((cap===true && wildTest(Filter,Categories[id].Name,true)) ||
-			    (cap===false && ProductMatch(Filter,Categories[id].Products))) {
-				el.style.backgroundColor="#ADDDFA";
-				i++;
-			} else {
-				el.style.backgroundColor="white";
-			}
-		}
-		el=document.getElementById('Counter');
-		if (i===0) 
-			el.value="";
-		else
-			el.value=i;
+		HighlightFilterBoxes();
 	});
 }
 
@@ -273,10 +270,6 @@ function updateURL(el,mode) {
                 Category = el.target.value;
                 break;
 	}
-	//window.location.href =
-         //       (window.location.href.split('?')[0]) + "?" +
-	//		"Level=" + Level + "&"+ "Category=" + Category;
-        //window.location.replace();
 	Main(JsonData);
 }
 
@@ -287,6 +280,10 @@ window.addEventListener('click',(event) => {
 	}
 })
 
+function rangeSlide(value) {
+	document.getElementById('rangeValue').innerHTML=value;
+}
+
 document.addEventListener('DOMContentLoaded', async function () {
 	const url = "http://localhost:80/json/trm.json";
 
@@ -295,7 +292,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 		const response = await fetch(Url);
 		return await response.json();
 	}
-	//Main(await getJSON(url));
 	JsonData = await getJSON(url);
 	Main(JsonData);
 })
