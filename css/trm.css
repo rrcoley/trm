@@ -4,7 +4,7 @@
 	position: relative;
 	padding: 10px;
 	overflow: hidden;
-	min-width: 800px;
+	min-width: 900px;
 }
 
 #title-container {
@@ -18,7 +18,7 @@
 	font-weight: normal;
 	font-size: 24pt;
 	position: relative;
-	min-width: 800px;
+	min-width: 900px;
 }
 
 #DCategory {
@@ -68,13 +68,14 @@
 	position: absolute;
 	top: 65px;
 	right: 30px;
-	font-size: 11px;
-	text-align: center;
 	//border: 1pt solid white;
 }
 
 #Counter {
-	//background: gray;
+	background: #9da1a6;
+	font-size: 11px;
+	color: white;
+	text-align: center;
 }
 
 .container {
