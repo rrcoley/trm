@@ -213,10 +213,12 @@ function HighlightFilterBoxes() {
 
 		if ((cap===true && wildTest(Filter,Categories[id].Name,true)) ||
 		    (cap===false && ProductMatch(Filter,Categories[id].Products))) {
-			el.style.backgroundColor="#ADDDFA";
+			el.style.backgroundColor="#e8547b"; //"#ADDDFA";
+			el.style.color="white";
 			i++;
 		} else {
 			el.style.backgroundColor="white";
+			el.style.color="";
 		}
 	}
 	el=document.getElementById('Counter');
